@@ -17,8 +17,10 @@ The repository is organized by language and then by data structure type to ensur
 
 ```text
 /dsa-master-vault
-  ├── Java/
+  ├── C++/
   │   ├── Linear_DS/
+  |   |   ├── Array/
+  |   |   |   ├── LeetCode_problems/     
   │   ├── Non-Linear_DS/
   │   └── Algorithms/
-  └── Documentation/        # Complexity cheat sheets and logic notes
+  
