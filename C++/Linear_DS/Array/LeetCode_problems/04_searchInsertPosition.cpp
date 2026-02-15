@@ -7,14 +7,14 @@ You must write an algorithm with O(log n) runtime complexity.
 #include<iostream>
 using namespace std;
 int searchInsert(vector<int>& nums, int target) {
-    int size=nums.size();
-    int index=0;
+    int size=nums.size();//getting the size of DS
+    int index=0; //index to be returned
     for(int i=0;i<size;i++){
-        if(nums[i]==target){
+        if(nums[i]==target){ // case if,found
             index=i;
             break;
         }
-        else{
+        else{      // if not
             if(nums[i]<target) ++index;
         }
     }
