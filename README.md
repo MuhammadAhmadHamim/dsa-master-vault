@@ -17,11 +17,11 @@ The repository is organized by language and then by data structure type to ensur
 
 ```text
 /dsa-master-vault
-  ├── C++/
-  │   ├── Linear_DS/
-  |   |   ├── Array/
-  |   |   |   ├── LeetCode_problems/     
-  │   ├── Non-Linear_DS/
-  │   └── Algorithms/
-  |   |   ├── Math_algorithms/
+  ├── 📁 C++/
+  |   ├── 📁 Algorithms/
+  |   |   ├── 📁 Math_algorithms/
+  │   ├── 📁 Linear_DS/
+  |   |   ├── 📁 Array/
+  |   |   |   ├── 📁 LeetCode_problems/     
+  │   ├── 📁 Non-Linear_DS/
   
