@@ -27,10 +27,11 @@ void valueSearch(int arr[] , int n , int value){ //function for value-based sear
 
 int main(){
 	int n;
-    int* arr=new int[n]; //initializing an array with dynamic memory 
 	
 	cout<<"Enter the size of your Array:";
 	cin>>n;
+
+	int* arr=new int[n]; //initializing an array with dynamic memory 
 	
 	for(int i = 0; i < n; i++) { //filling up of the respective array
     	cout<<"Enter the element of your array:";
@@ -69,6 +70,7 @@ int main(){
 			cout<<"Invalid input!"<<endl; //just in case input isn't 1 or 2
 			break;
 	}
+	delete[] arr; //freeing the memory
 	getch();
 	return 0;
 }
