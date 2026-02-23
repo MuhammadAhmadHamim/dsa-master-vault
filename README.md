@@ -22,6 +22,8 @@ The repository is organized by language and then by data structure type to ensur
   |   |   ├── 📁 Math_algorithms/
   │   ├── 📁 Linear_DS/
   |   |   ├── 📁 Array/
-  |   |   |   ├── 📁 LeetCode_problems/     
+  |   |   |   ├── 📁 LeetCode_problems/
+  |   |   ├── 📁 Linked_List/
+  |   |   |   ├── 📁 LeetCode_problems/      
   │   ├── 📁 Non-Linear_DS/
   
