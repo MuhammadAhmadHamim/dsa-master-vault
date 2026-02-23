@@ -33,7 +33,30 @@ void insertAtBack(Node*& head, int value) {
     // temp is now at last node
     temp->next = newNode;  // Link last node to new node
 }
-
+void insertAtPosition(Node*& head, int value, int pos) {
+    // Special case: Insert at front (position 0)
+    if (pos == 0) {
+        Node* newNode = new Node(value);
+        newNode->next = head;
+        head = newNode;
+        return;
+    }
+    
+    // Traverse to node BEFORE insertion point
+    Node* temp = head;
+    for (int i = 0; i < pos - 1; i++) {  // pos - 1 to stop one node before
+        if (temp == NULL) {  // Safety check: position out of bounds
+            cout << "Position out of bounds!" << endl;
+            return;
+        }
+        temp = temp->next;
+    }
+    
+    // Insert after temp
+    Node* newNode = new Node(value);
+    newNode->next = temp->next;  // Connect new node to rest of chain
+    temp->next = newNode;        // Connect previous node to new node
+}
 // Print entire list
 void printList(Node* head) {
     Node* temp = head;
