@@ -39,10 +39,10 @@ dsa-master-vault
 
 | # | Problem | Runtime | Memory | Code |
 |---|---------|---------|--------|------|
-| 1 | Two Sum | 35ms (44%) | 47MB (38%) | [→](C++/Linear_DS/Arrays/LeetCode/two_sum.cpp) |
-| 26 | Remove Duplicates from Sorted Array | **0ms (100%)** 🥇 | 47MB (62%) | [→](C++/Linear_DS/Arrays/LeetCode/remove_duplicates.cpp) |
-| 35 | Search Insert Position | **0ms (100%)** 🥇 | 14MB (76%) | [→](C++/Linear_DS/Arrays/LeetCode/search_insert.cpp) |
-| 88 | Merge Sorted Array | **0ms (100%)** 🥇 | 13MB (76%) | [→](C++/Linear_DS/Arrays/LeetCode/merge_sorted.cpp) |
+| 1 | Two Sum | 35ms (44%) | 47MB (38%) | [→](C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cpp) |
+| 26 | Remove Duplicates from Sorted Array | **0ms (100%)** 🥇 | 47MB (62%) | [→](C++/Linear_DS/Array/LeetCode_problems/02_removeDuplicatesfromsortedArray.cpp) |
+| 35 | Search Insert Position | **0ms (100%)** 🥇 | 14MB (76%) | [→](C++/Linear_DS/Array/LeetCode_problems/03_searchInsertPosition.cpp) |
+| 88 | Merge Sorted Array | **0ms (100%)** 🥇 | 13MB (76%) | [→](C++/Linear_DS/Array/LeetCode_problems/04_mergeSortedArray.cpp) |
 
 ---
 
@@ -51,18 +51,18 @@ dsa-master-vault
 
 | # | Problem | Runtime | Memory | Code |
 |---|---------|---------|--------|------|
-| 206 | Reverse Linked List | **0ms (100%)** 🥇 | 13MB (42%) | [→](C++/Linear_DS/LinkedLists/Singly/LeetCode/reverse.cpp) |
-| 21 | Merge Two Sorted Lists | **0ms (100%)** 🥇 | 19MB (86%) | [→](C++/Linear_DS/LinkedLists/Singly/LeetCode/merge.cpp) |
-| 83 | Remove Duplicates from Sorted List | **0ms (100%)** 🥇 | 16MB (67%) | [→](C++/Linear_DS/LinkedLists/Singly/LeetCode/remove_duplicates.cpp) |
-| 141 | Linked List Cycle | 12ms (43%) | 12MB (81%) | [→](C++/Linear_DS/LinkedLists/Singly/LeetCode/cycle.cpp) |
-| 876 | Middle of the Linked List | **0ms (100%)** 🥇 | 10MB (63%) | [→](C++/Linear_DS/LinkedLists/Singly/LeetCode/middle.cpp) |
+| 206 | Reverse Linked List | **0ms (100%)** 🥇 | 13MB (42%) | [→](C++/Linear_DS/Linked_List/LeetCode_problems/01_reverseLinkedList.cpp) |
+| 21 | Merge Two Sorted Lists | **0ms (100%)** 🥇 | 19MB (86%) | [→](C++/Linear_DS/Linked_List/LeetCode_problems/02_mergeTwoSortedLinkedList.cpp) |
+| 83 | Remove Duplicates from Sorted List | **0ms (100%)** 🥇 | 16MB (67%) | [→](C++/Linear_DS/Linked_List/LeetCode_problems/03_removeDuplicatesfromSortedLinkedList.cpp) |
+| 141 | Linked List Cycle | 12ms (43%) | 12MB (81%) | [→](C++/Linear_DS/Linked_List/LeetCode_problems/04_linkedlistCycle.cpp) |
+| 876 | Middle of the Linked List | **0ms (100%)** 🥇 | 10MB (63%) | [→](C++/Linear_DS/Linked_List/LeetCode_problems/05_middleofLinkedList.cpp) |
 
 ---
 
 ## 🔧 Custom Implementations
 
-**Arrays:** [Insert](C++/Linear_DS/Arrays/Functions/insert.cpp) · [Delete](C++/Linear_DS/Arrays/Functions/delete.cpp) · [Search](C++/Linear_DS/Arrays/Functions/search.cpp)  
-**Linked Lists:** [Insert](C++/Linear_DS/LinkedLists/Singly/Functions/insert.cpp) · [Delete](C++/Linear_DS/LinkedLists/Singly/Functions/delete.cpp)
+**Arrays:** [View & Insert](C++/Linear_DS/Array/01_viewAndinsert.cpp) · [Delete](C++/Linear_DS/Array/03_delete.cpp) · [Search](C++/Linear_DS/Array/02_search.cpp) · [Add/Update](C++\Linear_DS\Array\04_addORupdate.cpp)  
+**Linked Lists:** [Insert](C++/Linear_DS/Linked_List/Singly_Linked_List/01_insert.cpp) · [Delete](C++/Linear_DS/Linked_List/Singly_Linked_List/02_delete.cpp)
 
 ---
 
