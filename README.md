@@ -1,14 +1,14 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,40:1a0a0a,100:3d0f0f&height=230&section=header&text=dsa-master-vault&fontSize=52&fontColor=ff6b6b&fontAlignY=40&desc=Data%20Structures%20%26%20Algorithms%20%E2%80%94%20Built%20in%20C%2B%2B&descAlignY=63&descColor=ffaa80&animation=fadeIn&fontFamily=Georgia"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:020c1b,40:0a2540,100:0e4d6c&height=230&section=header&text=dsa-master-vault&fontSize=52&fontColor=64ffda&fontAlignY=40&desc=Data%20Structures%20and%20Algorithms%20in%20C%2B%2B&descAlignY=63&descColor=a8dadc&animation=fadeIn&fontFamily=Georgia" alt="banner"/>
 
 <br/>
 
-![Language](https://img.shields.io/badge/C%2B%2B-Solutions-ff6b6b?style=for-the-badge&logo=cplusplus&logoColor=white)
-![LeetCode](https://img.shields.io/badge/LeetCode-9_Solved-ffaa80?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-7_Problems_🥇-3d0f0f?style=for-the-badge)
-![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-ff6b6b?style=for-the-badge&logo=speedtest&logoColor=white)
-![Semester](https://img.shields.io/badge/Semester-3_|_Ongoing-1a0a0a?style=for-the-badge)
+![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
+![LeetCode](https://img.shields.io/badge/LeetCode-9_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-7_Problems_🥇-0a2540?style=for-the-badge)
+![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
+![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
 <br/><br/>
 
@@ -64,8 +64,8 @@ dsa-master-vault/
 ```
 ┌──────────────────────────────────────────────────────
 │                                                      
-│    Problems Solved      →   9
-│    100% Runtime Hits    →   7  🥇                   
+│    Problems Solved      →   9                        
+│    100% Runtime Hits    →   7  🥇                    
 │    Average Performance  →   85%+                     
 │    Active Since         →   Week 3, Semester 3       
 │    Status               →   🔨 Ongoing               
@@ -139,23 +139,23 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 ```cpp
 // Every pattern here has been used in a real solved problem.
 
-// ① Two Pointer — O(n) traversal without extra space
+// 1. Two Pointer — O(n) traversal without extra space
 int left = 0, right = n - 1;
 while (left < right) { /* close in */ }
 
-// ② Fast / Slow Pointer — Floyd's cycle + midpoint detection
+// 2. Fast / Slow Pointer — Floyd's cycle + midpoint detection
 ListNode* slow = head;
 ListNode* fast = head;
 while (fast && fast->next) { slow = slow->next; fast = fast->next->next; }
 
-// ③ Dummy Head — clean edge case handling in linked lists
+// 3. Dummy Head — clean edge case handling in linked lists
 ListNode dummy(0);
 ListNode* curr = &dummy;
 
-// ④ In-Place Modification — O(1) space array operations
+// 4. In-Place Modification — O(1) space array operations
 // Shift, overwrite, no auxiliary array needed.
 
-// ⑤ Pointer Reversal — iterative list restructuring
+// 5. Pointer Reversal — iterative list restructuring
 ListNode* prev = nullptr;
 while (curr) { ListNode* next = curr->next; curr->next = prev; prev = curr; curr = next; }
 ```
@@ -207,11 +207,11 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 
 <div align="center">
 
-![](https://img.shields.io/badge/C%2B%2B-Pointer_Mastery-ff6b6b?style=flat-square&logo=cplusplus&logoColor=white)
-![](https://img.shields.io/badge/DSA-Array_Patterns-3d0f0f?style=flat-square&logo=buffer&logoColor=white)
-![](https://img.shields.io/badge/DSA-Linked_List_Design-ffaa80?style=flat-square&logo=buffer&logoColor=black)
-![](https://img.shields.io/badge/Pattern-Two_Pointer-ff6b6b?style=flat-square&logo=buffer&logoColor=white)
-![](https://img.shields.io/badge/Pattern-Fast_%2F_Slow_Pointer-1a0a0a?style=flat-square&logo=buffer&logoColor=ffaa80)
+![](https://img.shields.io/badge/C%2B%2B-Pointer_Mastery-0e4d6c?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/DSA-Array_Patterns-64ffda?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/DSA-Linked_List_Design-0a2540?style=flat-square&logo=buffer&logoColor=64ffda)
+![](https://img.shields.io/badge/Pattern-Two_Pointer-a8dadc?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Pattern-Fast%2FSlow_Pointer-020c1b?style=flat-square&logo=buffer&logoColor=64ffda)
 ![](https://img.shields.io/badge/LeetCode-Active_Solver-FFA116?style=flat-square&logo=leetcode&logoColor=black)
 
 </div>
@@ -228,7 +228,7 @@ The 100% runtime scores aren't luck. They're what happens when the *why* behind 
 
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:3d0f0f,50:1a0a0a,100:0d0d0d&height=120&section=footer&animation=fadeIn"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0e4d6c,50:0a2540,100:020c1b&height=120&section=footer&animation=fadeIn" alt="footer"/>
 
 *Every solved problem is a permanent deposit. The vault only grows.*
 
