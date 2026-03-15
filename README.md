@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Seven problems hit **100% runtime**. Nine problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Ten problems hit **100% runtime**. Thirteen problems down. The rest of the semester ahead.
 
 ---
 
@@ -155,8 +155,8 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 | File | Operation |
 |---|---|
-| [01_linearqueue.cpp](C++/Linear_DS/Queue/01_linearqueue.cpp) | Implementation of a linear Queue and all its operations using Array |
-| [02_circularqueue.cpp](C++/Linear_DS/Queue/02_circularqueue.cpp) | Implementation of a linear Queue and all its operations using Array |
+| [01_linearqueue.cpp](C++/Linear_DS/Queue/01_linearqueue.cpp) | Implementation of a linear Queue and all its operations using a 1D Array |
+| [02_circularqueue.cpp](C++/Linear_DS/Queue/02_circularqueue.cpp) | Implementation of a linear Queue and all its operations using a 1D Array |
 
 </details>
 
@@ -234,7 +234,7 @@ Week 3  ──●── Arrays from scratch. First LeetCode attempt. First 100% 
             │
 Week 4  ────●── Linked lists. Pointer logic. 4 perfect scores in a single day.
               │
-Week 6  ──────●── Queues. Sliding window. 
+Week 6  ──────●── Queues. Position Tracking. 3 perfect scores in less than 3 hours. 
                 │
 Week 7  ────────●── [coming soon...]
 
@@ -284,8 +284,6 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Pattern-Sliding_Window-457b9d?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Pattern-Circular_Buffer-e63946?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Stack%2FQueue_Conversion-f4a261?style=flat-square&logo=buffer&logoColor=black)
-![](https://img.shields.io/badge/LeetCode-13_Problems_Solved-FFA116?style=flat-square&logo=leetcode&logoColor=black)
-![](https://img.shields.io/badge/Perfect_Scores-10%2F13_(77%25)-00d084?style=flat-square&logo=checkmarx&logoColor=white)
 
 </div>
 
