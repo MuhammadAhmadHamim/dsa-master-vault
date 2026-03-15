@@ -6,7 +6,7 @@
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
 ![LeetCode](https://img.shields.io/badge/LeetCode-13_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-10_Problems_🥇-0a2540?style=for-the-badge)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-9_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Ten problems hit **100% runtime**. Thirteen problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Nine problems hit **100% runtime**. Thirteen problems down. The rest of the semester ahead.
 
 ---
 
@@ -70,7 +70,7 @@ dsa-master-vault/
 ┌──────────────────────────────────────────────────────
 │                                                       
 │    Problems Solved      →   13                        
-│    100% Runtime Hits    →   10  🥇                     
+│    100% Runtime Hits    →   9  🥇                     
 │    Average Performance  →   85%+                     
 │    Active Since         →   Week 3, Semester 3       
 │    Status               →   🔨 Ongoing                
@@ -114,7 +114,7 @@ dsa-master-vault/
 
 | # | Problem | Runtime | Memory | Link |
 |:---:|---|:---:|:---:|:---:|
-| 933 | Number of Recent Calls | **0ms (100%) 🥇** | 9.45MB (74.52%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/01_numberofRecentCalls.cpp) |
+| 933 | Number of Recent Calls | 8ms (93.46%) | 63.24MB (35.99%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/01_numberofRecentCalls.cpp) |
 | 622 | Design Circular Queue | 8ms (10.98%) | 23.55MB (44.13%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/02_designCircularQueue.cpp) |
 | 232  | Implement Queue using Stacks | **0ms (100%) 🥇** | 9.77MB (30.69%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/03_implementQueueusingStacks.cpp) |
 | 649 | Dota2 Senate | **0ms (100%) 🥇** | 11.42MB (67.45%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/04_dota2Senate.cpp) |
@@ -226,7 +226,7 @@ Week 3  ──●── Arrays from scratch. First LeetCode attempt. First 100% 
             │
 Week 4  ────●── Linked lists. Pointer logic. 4 perfect scores in a single day.
               │
-Week 6  ──────●── Queues. Position Tracking. 3 perfect scores in less than 3 hours. 
+Week 6  ──────●── Queues. Position Tracking. 2 perfect scores in less than 3 hours. 
                 │
 Week 7  ────────●── [coming soon...]
 
