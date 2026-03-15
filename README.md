@@ -110,7 +110,7 @@ dsa-master-vault/
 ---
 
 ### 🚶‍♂️🚶‍♂️🚶‍♂️ Queue — 4 Problems
-**Patterns practiced:** Sliding window pattern · Two-stack queue conversion · One-queue stack conversion (rotation) · Two-queue simulation · Position tracking in rounds
+**Patterns practiced:** Sliding window pattern · Two-stack queue conversion · Two-queue simulation · Position tracking in rounds
 
 | # | Problem | Runtime | Memory | Link |
 |:---:|---|:---:|:---:|:---:|
@@ -210,15 +210,7 @@ front = (front + 1) % capacity;
 stack s1, s2;  // input stack, output stack
 // Transfer s1→s2 reverses order, achieving FIFO
 
-// 9. Queue Rotation — FIFO to LIFO conversion
-queue q;
-int size = q.size();
-for (int i = 0; i < size - 1; i++) {
-    q.push(q.front());  // move old elements to back
-    q.pop();            // newest element surfaces at front
-}
-
-// 10. Position Tracking — round-based simulation
+// 9. Position Tracking — round-based simulation
 queue positions;  // store indices, not just values
 positions.push(current_position + n);  // next round position
 // Enables ordered processing across multiple rounds
