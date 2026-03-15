@@ -5,8 +5,8 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-9_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-7_Problems_🥇-0a2540?style=for-the-badge)
+![LeetCode](https://img.shields.io/badge/LeetCode-13_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-10_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -39,20 +39,25 @@ dsa-master-vault/
     │
     ├── Linear_DS/
     │   ├── Array/
-    │   │   ├── LeetCode_Problems/
+    │   │   ├── LeetCode_problems/
     │   │   ├── 01_viewAndInsert.cpp
     │   │   ├── 02_search.cpp
     │   │   ├── 03_delete.cpp
     │   │   └── 04_addORupdate.cpp
     │   │
-    │   └── Linked_List/
-    │       ├── Singly_Linked_List/
-    │       │   ├── 01_insert.cpp
-    │       │   └── 02_delete.cpp
-    │       └── LeetCode_Problems/
+    │   ├── Linked_List/
+    |   |    ├── LeetCode_problems/
+    │   |    ├── Singly_Linked_List/
+    │   |    │   ├── 01_insert.cpp
+    │   |    │   └── 02_delete.cpp  
+    |   |
+    │   ├── Queue/
+    │   │   ├── LeetCode_problems/
+    │   │   ├── 01_linearqueue.cpp
+    │   │   └── 02_circularqueue.cpp
     │
     └── Non_Linear_DS/
-        └── [coming next...]
+        └── [coming soon...]
 ```
 
 ---
@@ -63,12 +68,12 @@ dsa-master-vault/
 
 ```
 ┌──────────────────────────────────────────────────────
-│                                                      
-│    Problems Solved      →   9                        
-│    100% Runtime Hits    →   7  🥇                    
+│                                                       
+│    Problems Solved      →   13                        
+│    100% Runtime Hits    →   10  🥇                     
 │    Average Performance  →   85%+                     
 │    Active Since         →   Week 3, Semester 3       
-│    Status               →   🔨 Ongoing               
+│    Status               →   🔨 Ongoing                
 │                                                      
 └──────────────────────────────────────────────────────
 ```
@@ -104,6 +109,18 @@ dsa-master-vault/
 
 ---
 
+### 🚶‍♂️🚶‍♂️🚶‍♂️ Queue — 4 Problems
+**Patterns practiced:** Sliding window pattern · Two-stack queue conversion · One-queue stack conversion (rotation) · Two-queue simulation · Position tracking in rounds
+
+| # | Problem | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 933 | Number of Recent Calls | **0ms (100%) 🥇** | 9.45MB (74.52%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/01_numberofRecentCalls.cpp) |
+| 622 | Design Circular Queue | 8ms (10.98%) | 23.55MB (44.13%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/02_designCircularQueue.cpp) |
+| 232  | Implement Queue using Stacks | **0ms (100%) 🥇** | 9.77MB (30.69%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/03_implementQueueusingStacks.cpp) |
+| 649 | Dota2 Senate | **0ms (100%) 🥇** | 11.42MB (67.45%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/04_dota2Senate.cpp) |
+
+---
+
 ## ◈ Custom Implementations
 
 These aren't LeetCode solutions — they're hand-built implementations of data structure operations from scratch. The real fundamentals.
@@ -132,10 +149,20 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 </details>
 
+<details>
+<summary><b>🚶‍♂️🚶‍♂️🚶‍♂️ Queue Operations & Implementation</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [01_linearqueue.cpp](C++/Linear_DS/Queue/01_linearqueue.cpp) | Implementation of a linear Queue and all its operations using Array |
+| [02_circularqueue.cpp](C++/Linear_DS/Queue/02_circularqueue.cpp) | Implementation of a linear Queue and all its operations using Array |
+
+</details>
+
 ---
 
 ## ◈ Techniques in the Toolkit
-
 ```cpp
 // Every pattern here has been used in a real solved problem.
 
@@ -146,19 +173,57 @@ while (left < right) { /* close in */ }
 // 2. Fast / Slow Pointer — Floyd's cycle + midpoint detection
 ListNode* slow = head;
 ListNode* fast = head;
-while (fast && fast->next) { slow = slow->next; fast = fast->next->next; }
+while (fast && fast->next) { 
+    slow = slow->next; 
+    fast = fast->next->next; 
+}
 
 // 3. Dummy Head — clean edge case handling in linked lists
 ListNode dummy(0);
 ListNode* curr = &dummy;
 
 // 4. In-Place Modification — O(1) space array operations
-// Shift, overwrite, no auxiliary array needed.
+// Shift, overwrite, no auxiliary array needed
 
 // 5. Pointer Reversal — iterative list restructuring
 ListNode* prev = nullptr;
-while (curr) { ListNode* next = curr->next; curr->next = prev; prev = curr; curr = next; }
+while (curr) { 
+    ListNode* next = curr->next; 
+    curr->next = prev; 
+    prev = curr; 
+    curr = next; 
+}
+
+// 6. Sliding Window — maintain valid range with queue
+queue window;
+window.push(new_element);
+while (!window.empty() && window.front() < threshold) {
+    window.pop();  // remove expired elements
+}
+
+// 7. Circular Buffer — modulo arithmetic for wraparound
+rear = (rear + 1) % capacity;
+front = (front + 1) % capacity;
+// Reuses array space efficiently without shifting
+
+// 8. Two-Stack Queue — LIFO to FIFO conversion
+stack s1, s2;  // input stack, output stack
+// Transfer s1→s2 reverses order, achieving FIFO
+
+// 9. Queue Rotation — FIFO to LIFO conversion
+queue q;
+int size = q.size();
+for (int i = 0; i < size - 1; i++) {
+    q.push(q.front());  // move old elements to back
+    q.pop();            // newest element surfaces at front
+}
+
+// 10. Position Tracking — round-based simulation
+queue positions;  // store indices, not just values
+positions.push(current_position + n);  // next round position
+// Enables ordered processing across multiple rounds
 ```
+
 
 ---
 
@@ -169,7 +234,10 @@ Week 3  ──●── Arrays from scratch. First LeetCode attempt. First 100% 
             │
 Week 4  ────●── Linked lists. Pointer logic. 4 perfect scores in a single day.
               │
-Week 5  ──────●── [ Next chapter loading... ]
+Week 6  ──────●── Queues. Sliding window. 
+                │
+Week 7  ────────●── [coming soon...]
+
 ```
 
 ---
@@ -180,7 +248,7 @@ The vault is still being filled. On the roadmap:
 
 - **Non-Linear DS** — Trees (Binary, BST), Graphs
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
-- **More LeetCode** — Stacks, Queues, Hash Maps
+- **More LeetCode** — Stacks, Hash Maps
 - **Algorithm Patterns** — Sliding window, BFS/DFS, Dynamic Programming foundations
 
 ---
@@ -210,9 +278,14 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/C%2B%2B-Pointer_Mastery-0e4d6c?style=flat-square&logo=cplusplus&logoColor=white)
 ![](https://img.shields.io/badge/DSA-Array_Patterns-64ffda?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/DSA-Linked_List_Design-0a2540?style=flat-square&logo=buffer&logoColor=64ffda)
+![](https://img.shields.io/badge/DSA-Queue_Operations-1d3557?style=flat-square&logo=buffer&logoColor=f1faee)
 ![](https://img.shields.io/badge/Pattern-Two_Pointer-a8dadc?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/Pattern-Fast%2FSlow_Pointer-020c1b?style=flat-square&logo=buffer&logoColor=64ffda)
-![](https://img.shields.io/badge/LeetCode-Active_Solver-FFA116?style=flat-square&logo=leetcode&logoColor=black)
+![](https://img.shields.io/badge/Pattern-Sliding_Window-457b9d?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-Circular_Buffer-e63946?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Stack%2FQueue_Conversion-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/LeetCode-13_Problems_Solved-FFA116?style=flat-square&logo=leetcode&logoColor=black)
+![](https://img.shields.io/badge/Perfect_Scores-10%2F13_(77%25)-00d084?style=flat-square&logo=checkmarx&logoColor=white)
 
 </div>
 
