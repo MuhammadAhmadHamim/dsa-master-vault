@@ -119,7 +119,7 @@ dsa-master-vault/
 | 622 | Design Circular Queue | 8ms (10.98%) | 23.55MB (44.13%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/02_designCircularQueue.cpp) |
 | 232  | Implement Queue using Stacks | **0ms (100%) 🥇** | 9.77MB (30.69%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/03_implementQueueusingStacks.cpp) |
 | 649 | Dota2 Senate | **0ms (100%) 🥇** | 11.42MB (67.45%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/04_dota2Senate.cpp) |
-| 622 | Design Circular Dequeue | **0ms (100%) 🥇** | 24.47MB (75.51%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/05_designCircularDequeue.cpp) |
+| 641 | Design Circular Dequeue | **0ms (100%) 🥇** | 24.47MB (75.51%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/05_designCircularDequeue.cpp) |
 
 ---
 
