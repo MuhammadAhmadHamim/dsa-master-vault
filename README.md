@@ -34,31 +34,31 @@ This vault tracks not just *what* was solved, but *how* — techniques, patterns
 dsa-master-vault/
 │
 └── C++/
-    ├── Algorithms/
-    │   └── Math_Algorithms/
-    │
-    ├── Linear_DS/
-    │   ├── Array/
-    │   │   ├── LeetCode_problems/
-    │   │   ├── 01_viewAndInsert.cpp
-    │   │   ├── 02_search.cpp
-    │   │   ├── 03_delete.cpp
-    │   │   └── 04_addORupdate.cpp
-    │   │
-    │   ├── Linked_List/
-    |   |    ├── LeetCode_problems/
-    │   |    ├── Singly_Linked_List/
-    │   |    │   ├── 01_insert.cpp
-    │   |    │   └── 02_delete.cpp  
-    |   |
-    │   ├── Queue/
-    │   │   ├── LeetCode_problems/
-    │   │   ├── 01_linearqueue.cpp
-    │   │   ├── 02_circularqueue.cpp
-    │   |   └── 03_dequeue.cpp
-    │
-    └── Non_Linear_DS/
-        └── [coming soon...]
+|   ├── Algorithms/
+|   │   └── Math_Algorithms/
+|   │
+|   ├── Linear_DS/
+|   │   ├── Array/
+|   │   │   ├── LeetCode_problems/
+|   │   │   ├── 01_viewAndInsert.cpp
+|   │   │   ├── 02_search.cpp
+|   │   │   ├── 03_delete.cpp
+|   │   │   └── 04_addORupdate.cpp
+|   │   │
+|   │   ├── Linked_List/
+|   |   |    ├── LeetCode_problems/
+|   │   |    ├── Singly_Linked_List/
+|   │   |    │   ├── 01_insert.cpp
+|   │   |    │   └── 02_delete.cpp  
+|   |   |
+|   │   ├── Queue/
+|   │   │   ├── LeetCode_problems/
+|   │   │   ├── 01_linearqueue.cpp
+|   │   │   ├── 02_circularqueue.cpp
+|   │   |   └── 03_dequeue.cpp
+|   │
+|   └── Non_Linear_DS/
+|       └── [coming soon...]
 ```
 
 ---
@@ -68,15 +68,15 @@ dsa-master-vault/
 <div align="center">
 
 ```
-┌───────────────────────────────────────────────────────┐
-                                                            
-     Problems Solved      →   14                           
-     100% Runtime Hits    →   10 🥇                        
-     Average Performance  →   85%+                         
-     Active Since         →   Week 3, Semester 3           
-     Status               →   🔨 Ongoing                  
-                                                          
-└───────────────────────────────────────────────────────┘
+┌───────────────────────────────────────────────────────────┐
+|                                                           |    
+|     Problems Solved      →   14                           |   
+|     100% Runtime Hits    →   10 🥇                        |
+|     Average Performance  →   85%+                         |  
+|     Active Since         →   Week 3, Semester 3           |  
+|     Status               →   🔨 Ongoing                  |  
+|                                                           | 
+└───────────────────────────────────────────────────────────┘
 ```
 
 </div>
