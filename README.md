@@ -69,13 +69,13 @@ dsa-master-vault/
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-|                                                           |    
-|     Problems Solved      →   14                           |   
-|     100% Runtime Hits    →   10 🥇                        |
-|     Average Performance  →   85%+                         |  
-|     Active Since         →   Week 3, Semester 3           |  
-|     Status               →   🔨 Ongoing                  |  
-|                                                           | 
+    |                                                           |    
+   |     Problems Solved      →   14                           |   
+|     100% Runtime Hits    →   10 🥇                       |
+  |     Average Performance  →   85%+                         |  
+  |     Active Since         →   Week 3, Semester 3           |  
+  |      Status               →   🔨 Ongoing                  |  
+ |                                                           | 
 └───────────────────────────────────────────────────────────┘
 ```
 
