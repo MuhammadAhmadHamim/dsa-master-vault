@@ -72,6 +72,7 @@ void insertAtPosition(Node*& head, int value, int pos) {
 	
 	temp->next = newNode;        // Connect previous node to new node
 }
+
 void deleteFromStart(Node*& head){
     if(head == NULL){ //check if the list is empty
         cout<<"List is empty!"<<endl;
@@ -88,6 +89,7 @@ void deleteFromStart(Node*& head){
 	delete temp; // deleting the memory
     cout<<"Deleted successfully!"<<endl;
 }
+
 void deleteFromEnd(Node*& head){
     
 	if(head == NULL){ //check if the list is empty
@@ -164,6 +166,7 @@ void printList(Node* head) {
     }
     cout << "NULL" << endl;
 }
+
 int main(){
     Node* head = NULL;
     
