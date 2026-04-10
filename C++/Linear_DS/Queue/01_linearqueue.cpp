@@ -96,8 +96,8 @@ int main(){
     		enqueue(value);
     	break;
         }
-        
-    	case 2:
+    	
+        case 2:
     		dequeue();
     	break;
     	
@@ -116,4 +116,3 @@ int main(){
 	
 	return 0;
 }
-
