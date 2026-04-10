@@ -89,12 +89,14 @@ int main(){
     
     switch(choice){
     	
-		case 1:
+		case 1:{
     		int value;
     		cout<<"Enter the value:";
     		cin>>value;
+    		enqueue(value);
     	break;
-    	
+        }
+        
     	case 2:
     		dequeue();
     	break;
