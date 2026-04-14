@@ -153,7 +153,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 <br/>
 
 <details>
-<summary><b>➰ Singly Linked List Operations</b></summary>
+<summary><b>➰ Linear Singly Linked List Operations</b></summary>
 <br/>
 
 | File | Operation |
@@ -175,7 +175,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 </details>
 
 <details>
-<summary><b>➿ Doubly Linked List Operations</b></summary>
+<summary><b>➿ Linear Doubly Linked List Operations</b></summary>
 <br/>
 
 | File | Operation |
