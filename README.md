@@ -46,18 +46,18 @@ dsa-master-vault/
     │   │   └── 04_addORupdate.cpp
     │   │
     │   ├── Linked_List/
-    |   |    ├── LeetCode_problems/
-    │   |    ├── Singly_Linked_List/
-    |   |    |   ├── Circular_Linked_List/
-    |   │    |   │   ├── 01_insert.cpp
-    |   │    |   │   └── 02_delete.cpp      
-    |   |    |   |
-    │   |    │   ├── 01_insert.cpp
-    │   |    │   └── 02_delete.cpp  
-    |   |    |
-    │   |    ├── Doubly_Linked_List/
-    │   |    │   ├── 01_insert.cpp
-    │   |    │   └── 02_delete.cpp
+    |   |   ├── LeetCode_problems/
+    │   |   ├── Singly_Linked_List/
+    |   |   |   ├── Circular_Linked_List/
+    |   │   |   │   ├── 01_insert.cpp
+    |   │   |   │   └── 02_delete.cpp      
+    |   |   |   |
+    │   |   │   ├── 01_insert.cpp
+    │   |   │   └── 02_delete.cpp  
+    |   |   |
+    │   |   ├── Doubly_Linked_List/
+    │   |   │   ├── 01_insert.cpp
+    │   |   │   └── 02_delete.cpp
     |   |
     │   ├── Queue/
     │   │   ├── LeetCode_problems/
