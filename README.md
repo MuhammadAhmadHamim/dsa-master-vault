@@ -172,7 +172,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 | [01_insert.cpp](C++/Linear_DS/Linked_List/Singly_Linked_List/Circular_Linked_List/01_insert.cpp) | Node insertion into circular list |
 | [02_delete.cpp](C++/Linear_DS/Linked_List/Singly_Linked_List/Circular_Linked_List/02_delete.cpp) | Node deletion from circular list |
 
-</details>🎯
+</details>
 
 <details>
 <summary><b>➿ Doubly Linked List Operations</b></summary>
