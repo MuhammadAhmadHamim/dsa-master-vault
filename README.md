@@ -48,9 +48,13 @@ dsa-master-vault/
     │   ├── Linked_List/
     |   |    ├── LeetCode_problems/
     │   |    ├── Singly_Linked_List/
+    |   |    |   ├── Circular_Linked_List/
+    |   │    |   │   ├── 01_insert.cpp
+    |   │    |   │   └── 02_delete.cpp      
+    |   |    |   |
     │   |    │   ├── 01_insert.cpp
     │   |    │   └── 02_delete.cpp  
-    |   |
+    |   |    |
     │   |    ├── Doubly_Linked_List/
     │   |    │   ├── 01_insert.cpp
     │   |    │   └── 02_delete.cpp
@@ -145,6 +149,10 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 </details>
 
 <details>
+<summary><b>🔗 Linked List Operations</b></summary>
+<br/>
+
+<details>
 <summary><b>➰ Singly Linked List Operations</b></summary>
 <br/>
 
@@ -156,6 +164,17 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 </details>
 
 <details>
+<summary><b>🔄 Circular Singly Linked List Operations</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [01_insert.cpp](C++/Linear_DS/Linked_List/Singly_Linked_List/Circular_Linked_List/01_insert.cpp) | Node insertion into circular list |
+| [02_delete.cpp](C++/Linear_DS/Linked_List/Singly_Linked_List/Circular_Linked_List/02_delete.cpp) | Node deletion from circular list |
+
+</details>🎯
+
+<details>
 <summary><b>➿ Doubly Linked List Operations</b></summary>
 <br/>
 
@@ -163,6 +182,8 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 |---|---|
 | [01_insert.cpp](C++/Linear_DS/Linked_List/Doubly_Linked_List/01_insert.cpp) | Node insertion (head, tail, position) |
 | [02_delete.cpp](C++/Linear_DS/Linked_List/Doubly_Linked_List/02_delete.cpp) | Node deletion by value or position |
+
+</details>
 
 </details>
 
