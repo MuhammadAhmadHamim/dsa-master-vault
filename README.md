@@ -214,6 +214,17 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 </details>
 
+<details>
+<summary><b>📚 Stack Operations & Implementation</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [01_implementStackusingArray.cpp](C++\Linear_DS\Stacks\01_implementStackusingArray.cpp) | Implementation of a Stack and all its operations using a 1D Array |
+| [02_implementStackusingLinkedList.cpp](C++\Linear_DS\Stacks\02_implementStackusingLinkedList.cpp) | Implementation of a Stack and all its operations using a Linear Singly Linked List |
+
+</details>
+
 ---
 
 ## ◈ Techniques in the Toolkit
