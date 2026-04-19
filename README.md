@@ -68,6 +68,11 @@ dsa-master-vault/
     │   │   ├── 01_linearqueue.cpp
     │   │   ├── 02_circularqueue.cpp
     │   |   └── 03_dequeue.cpp
+    |   |
+    |   ├── Stacks/
+    │   │   ├── LeetCode_problems/
+    │   │   ├── 01_implementStackusingArray.cpp
+    │   |   └── 02_implementStackusingLinkedList.cpp
     │
     └── Non_Linear_DS/
         └── [coming soon...]
@@ -220,8 +225,8 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 | File | Operation |
 |---|---|
-| [01_implementStackusingArray.cpp](C++\Linear_DS\Stacks\01_implementStackusingArray.cpp) | Implementation of a Stack and all its operations using a 1D Array |
-| [02_implementStackusingLinkedList.cpp](C++\Linear_DS\Stacks\02_implementStackusingLinkedList.cpp) | Implementation of a Stack and all its operations using a Linear Singly Linked List |
+| [01_implementStackusingArray.cpp](C++/Linear_DS/Stacks/01_implementStackusingArray.cpp) | Implementation of a Stack and all its operations using a 1D Array |
+| [02_implementStackusingLinkedList.cpp](C++/Linear_DS/Stacks/02_implementStackusingLinkedList.cpp) | Implementation of a Stack using a Linear Singly Linked List |
 
 </details>
 
