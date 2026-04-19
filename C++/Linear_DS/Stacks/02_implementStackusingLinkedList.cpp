@@ -39,7 +39,7 @@ void display(){
 		cout<<"Stack is empty!\n";
 		return;
 	}
-	 
+	
 	Node* dummy = head; // Using a fake head for traversal
 	
 	cout<<"Stack(top to bottom):"<<endl;
