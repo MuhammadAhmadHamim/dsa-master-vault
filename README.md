@@ -6,7 +6,7 @@
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
 ![LeetCode](https://img.shields.io/badge/LeetCode-14_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-10_Problems_🥇-0a2540?style=for-the-badge)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-15_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Ten problems hit **100% runtime**. Fourteen problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Fifteen problems hit **100% runtime**. Twenty one problems down. The rest of the semester ahead.
 
 ---
 
@@ -87,8 +87,8 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   14                           |   
-|     100% Runtime Hits    →   10 🥇                       |
+   |     Problems Solved      →   21                           |   
+|     100% Runtime Hits    →   15 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
   |      Status               →   🔨 Ongoing                  |  
@@ -137,6 +137,21 @@ dsa-master-vault/
 | 232  | Implement Queue using Stacks | **0ms (100%) 🥇** | 9.77MB (30.69%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/03_implementQueueusingStacks.cpp) |
 | 649 | Dota2 Senate | **0ms (100%) 🥇** | 11.42MB (67.45%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/04_dota2Senate.cpp) |
 | 641 | Design Circular Dequeue | **0ms (100%) 🥇** | 24.47MB (75.51%) | [→ code](C++/Linear_DS/Queue/LeetCode_problems/05_designCircularDequeue.cpp) |
+
+### 📚 Stacks — 7 Problems
+**Patterns practiced:** Bracket Matching · String as Stack · Auxiliary MetaData · Monotonic Stack · RPN Evaluation
+
+| # | Problem | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 225 | Implement Stack using Queue | **0ms (100%) 🥇** | 9.77MB (30.69%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/01_implementStackusingQueue.cpp) |
+| 20 | Valid Parentheses | **0ms (100%) 🥇** | 8.71MB (88.38%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/02_validParentheses.cpp) |
+| 1047  | Remove All Adjacent Duplicates In String | **0ms (100%) 🥇** | 14.50MB (20.78%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/03_removeAllAdjacentDuplicatesinString.cpp) |
+| 155 | Min Stack | 2ms (67.19%) | 23.29MB (83.77%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/04_minStack.cpp) |
+| 150 | Reverse Polish Notation | **0ms (100%) 🥇** | 17.04MB (63.03%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/05_evaluateReversePolishNotation.cpp) |
+| 682 | Baseball Game | **0ms (100%) 🥇** | 17.04MB (63.03%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/06_baseballGame.cpp) |
+| 739 | Daily Temperatures | 13ms (88.84%)  | 107.32MB (39.02%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/07_dailyTemperatures.cpp) |
+
+
 
 ---
 
@@ -355,9 +370,11 @@ Week 3  ──●── Arrays from scratch. First LeetCode attempt. First 100% 
                 │
 Week 4 & 5  ────●── Linked lists. Pointer logic. 4 perfect scores in a single day.
                   │
-Week 6 & 7  ──────●── Queues. Position Tracking. 2 perfect scores in less than 3 hours. 
-                │
-Week 8  ────────●── [coming soon...]
+Week 6 & 7  ──────●── Queues. Position Tracking. 2 perfect scores in less than 3 hours.
+                    |
+Week 8 & 9  ────────●── Stacks. Bracket Matching. 5 perfect scores out of 7 problems solved.
+                 │
+Week 10  ────────●── [coming soon...]
 
 ```
 
@@ -369,7 +386,7 @@ The vault is still being filled. On the roadmap:
 
 - **Non-Linear DS** — Trees (Binary, BST), Graphs
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
-- **More LeetCode** — Stacks, Hash Maps
+- **More LeetCode** — Hash Maps
 - **Algorithm Patterns** — Sliding window, BFS/DFS, Dynamic Programming foundations
 
 ---
@@ -408,8 +425,6 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Pattern-Monotonic_Stack-d62828?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Stack%2FQueue_Conversion-f4a261?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/Algorithm-RPN_Evaluation-e76f51?style=flat-square&logo=buffer&logoColor=white)
-![](https://img.shields.io/badge/LeetCode-21_Problems_Solved-FFA116?style=flat-square&logo=leetcode&logoColor=black)
-![](https://img.shields.io/badge/Perfect_Scores-14%2F21_(67%25)-00d084?style=flat-square&logo=checkmarx&logoColor=white)
 
 </div>
 
