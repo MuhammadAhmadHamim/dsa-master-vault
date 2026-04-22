@@ -233,6 +233,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 ---
 
 ## ◈ Techniques in the Toolkit
+
 ```cpp
 // Every pattern here has been used in a real solved problem.
 
@@ -265,7 +266,7 @@ while (curr) {
 }
 
 // 6. Sliding Window — maintain valid range with queue
-queue window;
+queue<int> window;
 window.push(new_element);
 while (!window.empty() && window.front() < threshold) {
     window.pop();  // remove expired elements
@@ -277,23 +278,73 @@ front = (front + 1) % capacity;
 // Reuses array space efficiently without shifting
 
 // 8. Two-Stack Queue — LIFO to FIFO conversion
-stack s1, s2;  // input stack, output stack
+stack<int> s1, s2;  // input stack, output stack
 // Transfer s1→s2 reverses order, achieving FIFO
 
-// 9. Position Tracking — round-based simulation
-queue positions;  // store indices, not just values
-positions.push(current_position + n);  // next round position
-// Enables ordered processing across multiple rounds
-
-// 10. Queue Rotation — FIFO to LIFO conversion
-queue q;
+// 9. Queue Rotation — FIFO to LIFO conversion
+queue<int> q;
 int size = q.size();
 for (int i = 0; i < size - 1; i++) {
     q.push(q.front());  // move old elements to back
     q.pop();            // newest element surfaces at front
 }
-```
 
+// 10. Position Tracking — round-based simulation
+queue<int> positions;  // store indices, not just values
+positions.push(current_position + n);  // next round position
+// Enables ordered processing across multiple rounds
+
+// 11. Bracket Matching — stack for nested structures
+stack<char> brackets;
+for (char c : s) {
+    if (isOpening(c)) brackets.push(c);
+    else if (matches(brackets.top(), c)) brackets.pop();
+}
+// Valid when stack is empty at end
+
+// 12. String as Stack — use string's push_back/pop_back
+string result;
+for (char c : s) {
+    if (!result.empty() && c == result.back()) {
+        result.pop_back();  // remove duplicate
+    } else {
+        result.push_back(c);  // add new char
+    }
+}
+// Avoids stack overhead for simple char storage
+
+// 13. RPN Evaluation — stack for postfix expressions
+stack<int> st;
+for (string token : tokens) {
+    if (isOperator(token)) {
+        int b = st.top(); st.pop();
+        int a = st.top(); st.pop();
+        st.push(calculate(a, b, token));
+    } else {
+        st.push(stoi(token));
+    }
+}
+// Result is final stack value
+
+// 14. Auxiliary Metadata — store extra info per element
+struct Node {
+    int data;
+    int min_so_far;  // track aggregate property
+    Node* next;
+};
+// Enables O(1) queries on running min/max/sum
+
+// 15. Monotonic Stack — maintain increasing/decreasing order
+stack<int> st;  // stores indices
+for (int i = 0; i < n; i++) {
+    while (!st.empty() && arr[i] > arr[st.top()]) {
+        int idx = st.top(); st.pop();
+        result[idx] = i - idx;  // found next greater
+    }
+    st.push(i);
+}
+// Used for next greater/smaller element problems
+```
 
 ---
 
