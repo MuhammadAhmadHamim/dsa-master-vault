@@ -57,22 +57,4 @@ class MyStack {
         
         }
 };
-/*
-/ 9. Queue Rotation — FIFO to LIFO conversion
-queue q;
-int size = q.size();
-for (int i = 0; i < size - 1; i++) {
-    q.push(q.front());  // move old elements to back
-    q.pop();            // newest element surfaces at front
-}
 
-0
-ms
-Beats
-100.00%
-
-9.77
-MB
-Beats
-30.69%
-*/
