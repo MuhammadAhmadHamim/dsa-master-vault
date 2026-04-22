@@ -400,11 +400,16 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/DSA-Array_Patterns-64ffda?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/DSA-Linked_List_Design-0a2540?style=flat-square&logo=buffer&logoColor=64ffda)
 ![](https://img.shields.io/badge/DSA-Queue_Operations-1d3557?style=flat-square&logo=buffer&logoColor=f1faee)
+![](https://img.shields.io/badge/DSA-Stack_Operations-6a040f?style=flat-square&logo=buffer&logoColor=ffd60a)
 ![](https://img.shields.io/badge/Pattern-Two_Pointer-a8dadc?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/Pattern-Fast%2FSlow_Pointer-020c1b?style=flat-square&logo=buffer&logoColor=64ffda)
 ![](https://img.shields.io/badge/Pattern-Sliding_Window-457b9d?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Pattern-Circular_Buffer-e63946?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-Monotonic_Stack-d62828?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Stack%2FQueue_Conversion-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Algorithm-RPN_Evaluation-e76f51?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/LeetCode-21_Problems_Solved-FFA116?style=flat-square&logo=leetcode&logoColor=black)
+![](https://img.shields.io/badge/Perfect_Scores-14%2F21_(67%25)-00d084?style=flat-square&logo=checkmarx&logoColor=white)
 
 </div>
 
