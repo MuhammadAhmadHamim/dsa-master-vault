@@ -284,6 +284,14 @@ stack s1, s2;  // input stack, output stack
 queue positions;  // store indices, not just values
 positions.push(current_position + n);  // next round position
 // Enables ordered processing across multiple rounds
+
+// 10. Queue Rotation — FIFO to LIFO conversion
+queue q;
+int size = q.size();
+for (int i = 0; i < size - 1; i++) {
+    q.push(q.front());  // move old elements to back
+    q.pop();            // newest element surfaces at front
+}
 ```
 
 
