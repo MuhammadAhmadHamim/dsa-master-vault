@@ -5,7 +5,7 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-14_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![LeetCode](https://img.shields.io/badge/LeetCode-21_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Perfect](https://img.shields.io/badge/100%25_Runtime-15_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
