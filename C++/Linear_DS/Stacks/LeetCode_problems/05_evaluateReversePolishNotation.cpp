@@ -49,14 +49,3 @@ public:
         return st.top(); // Returning the value at the top of stack(final result after the execution of whole loop)
     }
 };
-    /*
-    0
-    ms
-    Beats
-    100.00%
-    
-    17.04
-    MB
-    Beats
-    66.03%
-    */
