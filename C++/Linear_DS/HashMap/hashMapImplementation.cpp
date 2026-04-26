@@ -68,7 +68,7 @@ int get(string key){
 	return -1;
 }
 
-void remove(string key){
+void erase(string key){
 	
 	int index = hash(key); // Making the index
 	
@@ -205,7 +205,7 @@ int main(){
             case 3:
                 cout << "Enter key: ";
                 cin >> key;
-                remove(key);
+                erase(key);
                 break;
             
             case 4:
