@@ -68,6 +68,28 @@ int get(string key){
 	return -1;
 }
 
+bool count(string key){
+    
+    int index = hash(key); // Making the index of key
+	
+	if(buckets[index] == NULL){ // Safety check if it's NULL
+		cout<<"Bucket is empty!\n";
+		return false;
+	}
+	
+	Node* dummy = buckets[index];
+	while(dummy != NULL){ // Traversal
+		if(dummy->key == key){ //Returning true if key is found
+			return true;
+		}
+		
+		dummy = dummy->next;
+	} 
+	
+	cout<<"Key not found!\n";
+	return false;
+}
+
 void erase(string key){
 	
 	int index = hash(key); // Making the index
