@@ -264,26 +264,35 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 ## ◈ Techniques in the Toolkit
 
 ```cpp
-// Every pattern here has been used in a real solved problem.
+// Every pattern here has been battle-tested in real LeetCode problems.
+// Built from fundamentals to advanced, mirroring the learning journey.
+
+// === ARRAYS & POINTERS ===
 
 // 1. Two Pointer — O(n) traversal without extra space
 int left = 0, right = n - 1;
-while (left < right) { /* close in */ }
+while (left < right) { /* converge toward solution */ }
+// Used in: Sorted arrays, palindromes, container problems
 
-// 2. Fast / Slow Pointer — Floyd's cycle + midpoint detection
+// 2. Fast / Slow Pointer — Floyd's cycle detection + midpoint finding
 ListNode* slow = head;
 ListNode* fast = head;
 while (fast && fast->next) { 
     slow = slow->next; 
     fast = fast->next->next; 
 }
+// Used in: Cycle detection, finding middle, detecting loops
 
-// 3. Dummy Head — clean edge case handling in linked lists
+// 3. In-Place Modification — O(1) space array operations
+// Shift, overwrite, swap - no auxiliary array needed
+// Used in: Remove duplicates, rearrange elements
+
+// === LINKED LISTS ===
+
+// 4. Dummy Head — clean edge case handling in linked lists
 ListNode dummy(0);
 ListNode* curr = &dummy;
-
-// 4. In-Place Modification — O(1) space array operations
-// Shift, overwrite, no auxiliary array needed
+// Eliminates special cases for head operations
 
 // 5. Pointer Reversal — iterative list restructuring
 ListNode* prev = nullptr;
@@ -293,6 +302,9 @@ while (curr) {
     prev = curr; 
     curr = next; 
 }
+// Used in: Reverse list, reorder problems
+
+// === QUEUES & SLIDING WINDOW ===
 
 // 6. Sliding Window — maintain valid range with queue
 queue<int> window;
@@ -300,28 +312,37 @@ window.push(new_element);
 while (!window.empty() && window.front() < threshold) {
     window.pop();  // remove expired elements
 }
+// Used in: Time-based problems, moving averages
 
 // 7. Circular Buffer — modulo arithmetic for wraparound
 rear = (rear + 1) % capacity;
 front = (front + 1) % capacity;
 // Reuses array space efficiently without shifting
+// Used in: Ring buffers, queue implementation
 
-// 8. Two-Stack Queue — LIFO to FIFO conversion
+// 8. Position Tracking — round-based simulation
+queue<int> positions;  // store indices, not just values
+positions.push(current_position + n);  // next round position
+// Enables ordered processing across multiple rounds
+// Used in: Game simulations, multi-round voting
+
+// === STACK/QUEUE CONVERSIONS ===
+
+// 9. Two-Stack Queue — LIFO to FIFO conversion
 stack<int> s1, s2;  // input stack, output stack
 // Transfer s1→s2 reverses order, achieving FIFO
+// Amortized O(1) for all operations
 
-// 9. Queue Rotation — FIFO to LIFO conversion
+// 10. Queue Rotation — FIFO to LIFO conversion
 queue<int> q;
 int size = q.size();
 for (int i = 0; i < size - 1; i++) {
     q.push(q.front());  // move old elements to back
     q.pop();            // newest element surfaces at front
 }
+// Transforms queue behavior to stack-like
 
-// 10. Position Tracking — round-based simulation
-queue<int> positions;  // store indices, not just values
-positions.push(current_position + n);  // next round position
-// Enables ordered processing across multiple rounds
+// === STACK PATTERNS ===
 
 // 11. Bracket Matching — stack for nested structures
 stack<char> brackets;
@@ -330,6 +351,7 @@ for (char c : s) {
     else if (matches(brackets.top(), c)) brackets.pop();
 }
 // Valid when stack is empty at end
+// Used in: Parentheses validation, expression parsing
 
 // 12. String as Stack — use string's push_back/pop_back
 string result;
@@ -341,6 +363,7 @@ for (char c : s) {
     }
 }
 // Avoids stack overhead for simple char storage
+// Used in: Adjacent duplicates, simplification
 
 // 13. RPN Evaluation — stack for postfix expressions
 stack<int> st;
@@ -354,6 +377,7 @@ for (string token : tokens) {
     }
 }
 // Result is final stack value
+// Used in: Calculators, expression evaluation
 
 // 14. Auxiliary Metadata — store extra info per element
 struct Node {
@@ -362,6 +386,7 @@ struct Node {
     Node* next;
 };
 // Enables O(1) queries on running min/max/sum
+// Used in: Min/max stacks, running statistics
 
 // 15. Monotonic Stack — maintain increasing/decreasing order
 stack<int> st;  // stores indices
@@ -372,7 +397,34 @@ for (int i = 0; i < n; i++) {
     }
     st.push(i);
 }
-// Used for next greater/smaller element problems
+// Used in: Next greater/smaller element, temperature problems
+
+// === HASH MAPS ===
+
+// 16. Hash Map Lookup — O(1) existence/value check
+unordered_map<int, int> seen;
+if (seen.count(key)) {  // Check if key exists
+    return seen[key];   // Retrieve value in O(1)
+}
+seen[key] = value;  // Store for later lookup
+// Used in: Two sum, complement finding, caching
+
+// 17. Frequency Counting — track occurrences
+unordered_map<char, int> freq;
+for (char c : s) freq[c]++;  // Count each element
+// Use for: Anagrams, duplicates, top K elements
+
+// 18. Grouping by Key — collect items with common property
+unordered_map<string, vector<string>> groups;
+string key = computeKey(item);  // e.g., sorted string for anagrams
+groups[key].push_back(item);    // Group by computed key
+// Used in: Anagram grouping, categorization
+
+// 19. Pair Sorting — sort by first element of pair
+vector<pair<int, int>> pairs = {{3,1}, {1,2}, {2,3}};
+sort(pairs.rbegin(), pairs.rend());  // Descending by first element
+// Result: {(3,1), (2,3), (1,2)}
+// Used in: Frequency sorting, priority-based problems
 ```
 
 ---
@@ -432,13 +484,17 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/DSA-Linked_List_Design-0a2540?style=flat-square&logo=buffer&logoColor=64ffda)
 ![](https://img.shields.io/badge/DSA-Queue_Operations-1d3557?style=flat-square&logo=buffer&logoColor=f1faee)
 ![](https://img.shields.io/badge/DSA-Stack_Operations-6a040f?style=flat-square&logo=buffer&logoColor=ffd60a)
+![](https://img.shields.io/badge/DSA-Hash_Map_Mastery-9b2226?style=flat-square&logo=buffer&logoColor=ffd60a)
 ![](https://img.shields.io/badge/Pattern-Two_Pointer-a8dadc?style=flat-square&logo=buffer&logoColor=black)
 ![](https://img.shields.io/badge/Pattern-Fast%2FSlow_Pointer-020c1b?style=flat-square&logo=buffer&logoColor=64ffda)
 ![](https://img.shields.io/badge/Pattern-Sliding_Window-457b9d?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Pattern-Circular_Buffer-e63946?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Pattern-Monotonic_Stack-d62828?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-Frequency_Counting-ee9b00?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Stack%2FQueue_Conversion-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Pattern-Anagram_Detection-ca6702?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-RPN_Evaluation-e76f51?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Grouping_by_Key-bb3e03?style=flat-square&logo=buffer&logoColor=white)
 
 </div>
 
