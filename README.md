@@ -245,6 +245,16 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 </details>
 
+<details>
+<summary><b>🗺️ HashMap Operations & Implementation</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [hashMapImplementation.cpp](C++/Linear_DS/HashMap/hashMapImplementation.cpp) | Implementation of a HashMap using a 1D Array & a singly linear LinkedList |
+
+</details>
+
 ---
 
 ## ◈ Techniques in the Toolkit
