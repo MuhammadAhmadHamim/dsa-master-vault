@@ -5,8 +5,8 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-21_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-15_Problems_🥇-0a2540?style=for-the-badge)
+![LeetCode](https://img.shields.io/badge/LeetCode-26_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-19_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Fifteen problems hit **100% runtime**. Twenty one problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Nineteen problems hit **100% runtime**. Twenty six problems down. The rest of the semester ahead.
 
 ---
 
@@ -91,8 +91,8 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   21                           |   
-|     100% Runtime Hits    →   15 🥇                       |
+   |     Problems Solved      →   26                           |   
+|     100% Runtime Hits    →   19 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
   |      Status               →   🔨 Ongoing                  |  
@@ -155,7 +155,18 @@ dsa-master-vault/
 | 682 | Baseball Game | **0ms (100%) 🥇** | 17.04MB (63.03%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/06_baseballGame.cpp) |
 | 739 | Daily Temperatures | 13ms (88.84%)  | 107.32MB (39.02%) | [→ code](C++/Linear_DS/Stacks/LeetCode_problems/07_dailyTemperatures.cpp) |
 
+### 🗺️ HashMaps — 6 Problems
 
+**Patterns practiced:** Hash map lookup · Frequency counting · Anagram detection · Grouping by key · Pair sorting
+
+| # | Problem | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 1 | Two Sum | **0ms (100%) 🥇** | 14.93MB (18.41%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/01_twoSum.cpp) |
+| 217 | Contains Duplicate | 51ms (50.10%) | 90.81MB (44.55%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/02_containsDuplicate.cpp) |
+| 242 | Valid Anagram | **0ms (100%) 🥇** | 9.83MB (24.10%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/03_validAnagram.cpp) |
+| 383 | Ransom Note | **0ms (100%) 🥇** | 11.96MB (28.02%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/04_ransomNote.cpp) |
+| 49 | Group Anagrams | 11ms (91.14%) | 24.78MB (91.84%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/05_groupAnagram.cpp) |
+| 347 | Top K Frequent Elements | **0ms (100%) 🥇** | 19.11MB (20.92%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/06_top_K_FrequentElements.cpp) |
 
 ---
 
@@ -439,8 +450,10 @@ Week 4 & 5  ────●── Linked lists. Pointer logic. 4 perfect scores 
 Week 6 & 7  ──────●── Queues. Position Tracking. 2 perfect scores in less than 3 hours.
                     |
 Week 8 & 9  ────────●── Stacks. Bracket Matching. 5 perfect scores out of 7 problems solved.
+                      |
+Week 10  ─────────────●── HashMaps. Frequency Counting. 4 perfect scores out of 6 problems solved.
                  │
-Week 10  ────────●── [coming soon...]
+Week 11  ────────●── [coming soon...]
 
 ```
 
@@ -452,8 +465,8 @@ The vault is still being filled. On the roadmap:
 
 - **Non-Linear DS** — Trees (Binary, BST), Graphs
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
-- **More LeetCode** — Hash Maps
 - **Algorithm Patterns** — Sliding window, BFS/DFS, Dynamic Programming foundations
+- **More LeetCode** 
 
 ---
 
