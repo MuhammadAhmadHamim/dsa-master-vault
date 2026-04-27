@@ -24,14 +24,3 @@ public:
     return {}; // Safety case(extra since the question ensures that there must be a solution)
     }
 };
-    /*
-    0
-    ms
-    Beats
-    100.00%
-    
-    14.93
-    MB
-    Beats
-    18.41%
-    */
