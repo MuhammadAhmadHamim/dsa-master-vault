@@ -80,8 +80,12 @@ dsa-master-vault/
     │
     └── Non_Linear_DS/
         └── Trees/
-            └── Binary_Tree/
-                └── traversalTechniques.cpp
+            ├── Binary_Tree/
+            |   └── traversalTechniques.cpp
+            |
+            └── BST/
+                └── BSTimplementation.cpp
+
 ```
 
 ---
