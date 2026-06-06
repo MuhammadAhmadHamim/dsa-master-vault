@@ -12,6 +12,7 @@ struct TreeNode{
 	
 };
 
+// Insertion using Recursion
 void insert(TreeNode*& root, int val){
 	
 	if(root == NULL){
