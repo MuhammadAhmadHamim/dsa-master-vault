@@ -5,8 +5,8 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-26_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-19_Problems_🥇-0a2540?style=for-the-badge)
+![LeetCode](https://img.shields.io/badge/LeetCode-32_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-25_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Nineteen problems hit **100% runtime**. Twenty six problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty five problems hit **100% runtime**. Thirty two problems down. The rest of the semester ahead.
 
 ---
 
@@ -80,6 +80,7 @@ dsa-master-vault/
     │
     └── Non_Linear_DS/
         └── Trees/
+            ├── LeetCode_problems/
             ├── Binary_Tree/
             |   ├── levelOrderTraversal.cpp
             |   └── traversalTechniques.cpp
@@ -98,8 +99,8 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   26                           |   
-|     100% Runtime Hits    →   19 🥇                       |
+   |     Problems Solved      →   32                           |   
+|     100% Runtime Hits    →   25 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
   |      Status               →   🔨 Ongoing                  |  
@@ -174,6 +175,19 @@ dsa-master-vault/
 | 383 | Ransom Note | **0ms (100%) 🥇** | 11.96MB (28.02%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/04_ransomNote.cpp) |
 | 49 | Group Anagrams | 11ms (91.14%) | 24.78MB (91.84%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/05_groupAnagram.cpp) |
 | 347 | Top K Frequent Elements | **0ms (100%) 🥇** | 19.11MB (20.92%) | [→ code](C++/Linear_DS/HashMap/LeetCode_problems/06_top_K_FrequentElements.cpp) |
+
+### 🌲 Trees — 6 Problems
+
+**Patterns practiced:** BFS · DFS · Recursive insertion/search/deletion(all 3 cases) · Level-Order by Level Separation
+
+| # | Problem | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 144 | Binary Tree Preorder Traversal | **0ms (100%) 🥇** | 10.92MB (41.10%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\01_binaryTreePreorderTraversal.cpp) |
+| 94 | Binary Tree Inorder Traversal | **0ms (100%) 🥇** | 10.81MB (65.34%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\02_binaryTreeInorderTraversal.cpp) |
+| 145 | Binary Tree Postorder Traversal | **0ms (100%) 🥇** | 11.12MB (15.80%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\03_binaryTreePostorderTraversal.cpp) |
+| 104 | Maximum Depth of Binary Tree | **0ms (100%) 🥇** | 19.08MB (46.71%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\04_maximumDepthofBinaryTree.cpp) |
+| 226 | Invert Binary Tree | **0ms (100%) 🥇** | 12.48MB (60.11%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\05_invertBinaryTree.cpp) |
+| 102 | Binary Tree Level Order Traversal | **0ms (100%) 🥇** | 17.01MB (71.70%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\06_binaryTreeLevelOrderTraversal.cpp) |
 
 ---
 
@@ -274,6 +288,33 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 | File | Operation |
 |---|---|
 | [hashMapImplementation.cpp](C++/Linear_DS/HashMap/hashMapImplementation.cpp) | Implementation of a HashMap using a 1D Array & a singly linear LinkedList |
+
+</details>
+
+<details>
+<summary><b>🌲 Tree Operations</b></summary>
+<br/>
+
+<details>
+<summary><b>🌳 Binary Tree Traversal Techniques</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [levelOrderTraversal.cpp](C++\Non_Linear_DS\Trees\Binary_Tree\levelOrderTraversal.cpp) | BFS implementation |
+| [traversalTechniques.cpp](C++\Non_Linear_DS\Trees\Binary_Tree\traversalTechniques.cpp) | preorder, inorder, postorder (DFS) |
+
+</details>
+
+<details>
+<summary><b>🎄 BST Operations & Implementation</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [BSTimplementation.cpp](C++\Non_Linear_DS\Trees\BST\BSTimplementation.cpp) | insert, search, remove, findMin, findMax |
+
+</details>
 
 </details>
 
@@ -443,6 +484,192 @@ vector<pair<int, int>> pairs = {{3,1}, {1,2}, {2,3}};
 sort(pairs.rbegin(), pairs.rend());  // Descending by first element
 // Result: {(3,1), (2,3), (1,2)}
 // Used in: Frequency sorting, priority-based problems
+
+// === TREE FUNDAMENTALS ===
+
+// 20. DFS - Preorder (Root → Left → Right)
+void preOrder(TreeNode* root){
+    if(root == NULL) return;
+    
+    cout << root->data << " ";  // Process root FIRST
+    preOrder(root->left);       // Then left subtree
+    preOrder(root->right);      // Then right subtree
+}
+// Used in: Tree construction, copying trees, prefix expression
+
+// 21. DFS - Inorder (Left → Root → Right)
+void inOrder(TreeNode* root){
+    if(root == NULL) return;
+    
+    inOrder(root->left);        // Left subtree FIRST
+    cout << root->data << " ";  // Then process root
+    inOrder(root->right);       // Then right subtree
+}
+// Used in: BST traversal (gives SORTED order), expression evaluation
+// Special property: Inorder on BST = sorted sequence
+
+// 22. DFS - Postorder (Left → Right → Root)
+void postOrder(TreeNode* root){
+    if(root == NULL) return;
+    
+    postOrder(root->left);      // Left subtree FIRST
+    postOrder(root->right);     // Then right subtree
+    cout << root->data << " ";  // Then process root LAST
+}
+// Used in: Deleting trees, postfix expressions, dependency resolution
+
+// 23. BFS - Level Order Traversal
+void bfs(TreeNode* root){
+    if(root == NULL) return;
+    
+    queue<TreeNode*> q;
+    q.push(root);
+    
+    while(!q.empty()){
+        TreeNode* current = q.front();
+        q.pop();
+        
+        cout << current->data << " ";  // Process level by level
+        
+        if(current->left != NULL)
+            q.push(current->left);     // Add left child
+        if(current->right != NULL)
+            q.push(current->right);    // Add right child
+    }
+}
+// Used in: Level-by-level problems, shortest path in trees, closest nodes
+
+// 24. Height Calculation - DFS
+int getHeight(TreeNode* root){
+    if(root == NULL) return 0;
+    
+    int leftHeight = getHeight(root->left);
+    int rightHeight = getHeight(root->right);
+    
+    return 1 + max(leftHeight, rightHeight);
+}
+// Height = longest path from node to leaf
+// Used in: Balance checking, tree depth problems, AVL trees
+
+// 25. BST Insert - Recursive
+void insert(TreeNode*& root, int value){
+    if(root == NULL){
+        root = new TreeNode(value);
+        return;
+    }
+    
+    if(value < root->data)
+        insert(root->left, value);   // Left if smaller
+    else if(value > root->data)
+        insert(root->right, value);  // Right if larger
+}
+// Time: O(h) where h = height
+// Key: Maintain BST property (left < root < right)
+
+// 26. BST Search - Recursive
+void search(TreeNode* root, int value){
+    if(root == NULL){
+        cout << "Not found!\n";
+        return;
+    }
+    
+    if(root->data == value){
+        cout << "Found!\n";
+        return;
+    }
+    
+    if(value < root->data)
+        search(root->left, value);   // Search left
+    else
+        search(root->right, value);  // Search right
+}
+// Time: O(h) - follows BST path
+
+// 27. BST Delete - All Three Cases
+void remove(TreeNode*& root, int value){
+    if(root == NULL) return;
+    
+    if(value < root->data)
+        remove(root->left, value);
+    else if(value > root->data)
+        remove(root->right, value);
+    else{
+        // Node found - three cases:
+        
+        // CASE 1: Node is a leaf (no children)
+        if(root->left == NULL && root->right == NULL){
+            delete root;
+            root = NULL;
+            return;
+        }
+        
+        // CASE 2: Node has only right child
+        if(root->left == NULL){
+            TreeNode* temp = root;
+            root = root->right;
+            delete temp;
+            return;
+        }
+        
+        // CASE 3: Node has only left child
+        if(root->right == NULL){
+            TreeNode* temp = root;
+            root = root->left;
+            delete temp;
+            return;
+        }
+        
+        // CASE 4: Node has two children
+        int minVal = findMin(root->right);
+        root->data = minVal;
+        remove(root->right, minVal);
+    }
+}
+// Key: For two children, use inorder successor
+
+// 28. Tree Inversion - DFS
+TreeNode* invertTree(TreeNode* root){
+    if(root == NULL) return NULL;
+    
+    TreeNode* temp = root->left;
+    root->left = root->right;
+    root->right = temp;
+    
+    invertTree(root->left);
+    invertTree(root->right);
+    
+    return root;
+}
+// Strategy: Preorder traversal (process node before children)
+
+// 29. Level-Order by Level Separation
+vector<vector<int>> levelOrderByLevel(TreeNode* root){
+    vector<vector<int>> result;
+    if(root == NULL) return result;
+    
+    queue<TreeNode*> q;
+    q.push(root);
+    
+    while(!q.empty()){
+        int levelSize = q.size();  // Nodes at current level
+        vector<int> currentLevel;
+        
+        for(int i = 0; i < levelSize; i++){
+            TreeNode* current = q.front();
+            q.pop();
+            
+            currentLevel.push_back(current->data);
+            
+            if(current->left) q.push(current->left);
+            if(current->right) q.push(current->right);
+        }
+        
+        result.push_back(currentLevel);
+    }
+    
+    return result;
+}
+// Key trick: Use levelSize to know where current level ends
 ```
 
 ---
@@ -459,8 +686,8 @@ Week 6 & 7  ──────●── Queues. Position Tracking. 2 perfect sco
 Week 8 & 9  ────────●── Stacks. Bracket Matching. 5 perfect scores out of 7 problems solved.
                       |
 Week 10  ─────────────●── HashMaps. Frequency Counting. 4 perfect scores out of 6 problems solved.
-                 │
-Week 11  ────────●── [coming soon...]
+                        │
+Week 11-15  ────────────●── Trees. BFS/DFS. 6 perfect scores out of 6 problems solved.
 
 ```
 
@@ -470,9 +697,9 @@ Week 11  ────────●── [coming soon...]
 
 The vault is still being filled. On the roadmap:
 
-- **Non-Linear DS** — Trees (Binary, BST), Graphs
+- **Non-Linear DS** — Trees (AVL, Heaps), Graphs
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
-- **Algorithm Patterns** — Sliding window, BFS/DFS, Dynamic Programming foundations
+- **Algorithm Patterns** — Sliding window, Dynamic Programming foundations
 - **More LeetCode** 
 
 ---
@@ -515,6 +742,18 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Pattern-Anagram_Detection-ca6702?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-RPN_Evaluation-e76f51?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Grouping_by_Key-bb3e03?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/DSA-Tree_Traversals-1d3557?style=flat-square&logo=buffer&logoColor=f1faee)
+![](https://img.shields.io/badge/Pattern-DFS_Preorder-ee9b00?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-DFS_Inorder-ca6702?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-DFS_Postorder-bb3e03?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-BFS_Level_Order-457b9d?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/DSA-Binary_Search_Tree-0a2540?style=flat-square&logo=buffer&logoColor=64ffda)
+![](https://img.shields.io/badge/Algorithm-BST_Insert_Search_Delete-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Algorithm-Inorder_Successor-e0aaff?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Pattern-Height_Calculation-d62828?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Pattern-Tree_Inversion-e76f51?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/C%2B%2B-Recursive_Design-0e4d6c?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/C%2B%2B-Pointer_References-020c1b?style=flat-square&logo=cplusplus&logoColor=64ffda)
 
 </div>
 
