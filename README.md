@@ -182,12 +182,12 @@ dsa-master-vault/
 
 | # | Problem | Runtime | Memory | Link |
 |:---:|---|:---:|:---:|:---:|
-| 144 | Binary Tree Preorder Traversal | **0ms (100%) 🥇** | 10.92MB (41.10%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\01_binaryTreePreorderTraversal.cpp) |
-| 94 | Binary Tree Inorder Traversal | **0ms (100%) 🥇** | 10.81MB (65.34%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\02_binaryTreeInorderTraversal.cpp) |
-| 145 | Binary Tree Postorder Traversal | **0ms (100%) 🥇** | 11.12MB (15.80%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\03_binaryTreePostorderTraversal.cpp) |
-| 104 | Maximum Depth of Binary Tree | **0ms (100%) 🥇** | 19.08MB (46.71%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\04_maximumDepthofBinaryTree.cpp) |
-| 226 | Invert Binary Tree | **0ms (100%) 🥇** | 12.48MB (60.11%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\05_invertBinaryTree.cpp) |
-| 102 | Binary Tree Level Order Traversal | **0ms (100%) 🥇** | 17.01MB (71.70%) | [→ code](C++\Non_Linear_DS\Trees\LeetCode_problems\06_binaryTreeLevelOrderTraversal.cpp) |
+| 144 | Binary Tree Preorder Traversal | **0ms (100%) 🥇** | 10.92MB (41.10%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/01_binaryTreePreorderTraversal.cpp) |
+| 94 | Binary Tree Inorder Traversal | **0ms (100%) 🥇** | 10.81MB (65.34%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/02_binaryTreeInorderTraversal.cpp) |
+| 145 | Binary Tree Postorder Traversal | **0ms (100%) 🥇** | 11.12MB (15.80%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/03_binaryTreePostorderTraversal.cpp) |
+| 104 | Maximum Depth of Binary Tree | **0ms (100%) 🥇** | 19.08MB (46.71%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/04_maximumDepthofBinaryTree.cpp) |
+| 226 | Invert Binary Tree | **0ms (100%) 🥇** | 12.48MB (60.11%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/05_invertBinaryTree.cpp) |
+| 102 | Binary Tree Level Order Traversal | **0ms (100%) 🥇** | 17.01MB (71.70%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/06_binaryTreeLevelOrderTraversal.cpp) |
 
 ---
 
@@ -301,8 +301,8 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 | File | Operation |
 |---|---|
-| [levelOrderTraversal.cpp](C++\Non_Linear_DS\Trees\Binary_Tree\levelOrderTraversal.cpp) | BFS implementation |
-| [traversalTechniques.cpp](C++\Non_Linear_DS\Trees\Binary_Tree\traversalTechniques.cpp) | preorder, inorder, postorder (DFS) |
+| [levelOrderTraversal.cpp](C++/Non_Linear_DS/Trees/Binary_Tree/levelOrderTraversal.cpp) | BFS implementation |
+| [traversalTechniques.cpp](C++/Non_Linear_DS/Trees/Binary_Tree/traversalTechniques.cpp) | preorder, inorder, postorder (DFS) |
 
 </details>
 
@@ -312,7 +312,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 | File | Operation |
 |---|---|
-| [BSTimplementation.cpp](C++\Non_Linear_DS\Trees\BST\BSTimplementation.cpp) | insert, search, remove, findMin, findMax |
+| [BSTimplementation.cpp](C++/Non_Linear_DS/Trees/BST/BSTimplementation.cpp) | insert, search, remove, findMin, findMax |
 
 </details>
 
