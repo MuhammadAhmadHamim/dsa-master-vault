@@ -81,6 +81,9 @@ dsa-master-vault/
     └── Non_Linear_DS/
         └── Trees/
             ├── LeetCode_problems/
+            ├── AVL/
+            |   └── AVL_rotations.pdf
+            |
             ├── Binary_Tree/
             |   ├── levelOrderTraversal.cpp
             |   └── traversalTechniques.cpp
@@ -315,6 +318,16 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 | [BSTimplementation.cpp](C++/Non_Linear_DS/Trees/BST/BSTimplementation.cpp) | insert, search, remove, findMin, findMax |
 
 </details>
+
+</details>
+
+<details>
+<summary><b>⚖️ AVL Rotations</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [AVL_rotations.pdf](C++/Non_Linear_DS/Trees/AVL/AVL_rotations.pdf) | All four types of AVL tree rotations |
 
 </details>
 
@@ -687,7 +700,7 @@ Week 8 & 9  ────────●── Stacks. Bracket Matching. 5 perfec
                       |
 Week 10  ─────────────●── HashMaps. Frequency Counting. 4 perfect scores out of 6 problems solved.
                         │
-Week 11-15  ────────────●── Trees. BFS/DFS. 6 perfect scores out of 6 problems solved.
+Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6 perfect scores out of 6 problems solved.
 
 ```
 
@@ -697,7 +710,7 @@ Week 11-15  ────────────●── Trees. BFS/DFS. 6 perf
 
 The vault is still being filled. On the roadmap:
 
-- **Non-Linear DS** — Trees (AVL, Heaps), Graphs
+- **Non-Linear DS** — Trees (Heaps), Graphs
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
 - **Algorithm Patterns** — Sliding window, Dynamic Programming foundations
 - **More LeetCode** 
