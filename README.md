@@ -195,6 +195,25 @@ dsa-master-vault/
 
 ---
 
+## ◈ Algorithms Implemented
+
+Core algorithmic patterns — the foundation of optimization. Each includes full implementation, complexity analysis, and practical use cases.
+
+### Math Algorithms
+
+| # | Algorithm | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 9 | Palindrome Number | 5ms (78.99%) | 45.96MB (53.10%) | [→ code](C++/Algorithms/Math_algorithms/01_palindromeNumber.cpp) |
+
+### Searching Algorithms
+
+| Algorithm | Time | Space | When to Use | File |
+|-----------|------|-------|------------|------|
+| **Linear Search** | O(n) | O(1) | Unsorted arrays, small data | [01_linearSearch.cpp](C++/Algorithms/Searching_algorithms/01_linearSearch.cpp) |
+| **Binary Search** | O(log n) | O(1) | Sorted arrays, large datasets | [02_binarySearch.cpp](C++/Algorithms/Searching_algorithms/02_binarySearch.cpp) |
+
+---
+
 ## ◈ Custom Implementations
 
 These aren't LeetCode solutions — they're hand-built implementations of data structure operations from scratch. The real fundamentals.
