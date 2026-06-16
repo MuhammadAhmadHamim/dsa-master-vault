@@ -203,10 +203,10 @@ Core algorithmic patterns — the foundation of optimization. Each includes full
 
 ### 🔎 Searching Algorithms
 
-| Algorithm | Time | Space | When to Use | File |
-|-----------|------|-------|------------|------|
-| **Linear Search** | O(n) | O(1) | Unsorted arrays, small data | [01_linearSearch.cpp](C++/Algorithms/Searching_algorithms/01_linearSearch.cpp) |
-| **Binary Search** | O(log n) | O(1) | Sorted arrays, large datasets | [02_binarySearch.cpp](C++/Algorithms/Searching_algorithms/02_binarySearch.cpp) |
+| # | Algorithm | Time | Space | When to Use | File |
+|---|-----------|------|-------|------------|------|
+| 1 | **Linear Search** | O(n) | O(1) | Unsorted arrays, small data | [01_linearSearch.cpp](C++/Algorithms/Searching_algorithms/01_linearSearch.cpp) |
+| 2 | **Binary Search** | O(log n) | O(1) | Sorted arrays, large datasets | [02_binarySearch.cpp](C++/Algorithms/Searching_algorithms/02_binarySearch.cpp) |
 
 ---
 
