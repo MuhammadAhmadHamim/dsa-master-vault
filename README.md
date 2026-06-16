@@ -201,9 +201,9 @@ Core algorithmic patterns — the foundation of optimization. Each includes full
 
 ### Math Algorithms
 
-| # | Algorithm | Runtime | Memory | Link |
+| # | Algorithm | Runtime | Memory | File |
 |:---:|---|:---:|:---:|:---:|
-| 9 | **Palindrome Number** | 5ms (78.99%) | 45.96MB (53.10%) | [→ code](C++/Algorithms/Math_algorithms/01_palindromeNumber.cpp) |
+| 9 | **Palindrome Number** | 5ms (78.99%) | 45.96MB (53.10%) | [01_palindromeNumber.cpp](C++/Algorithms/Math_algorithms/01_palindromeNumber.cpp) |
 
 ### Searching Algorithms
 
