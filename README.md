@@ -5,7 +5,7 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-32_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![LeetCode](https://img.shields.io/badge/LeetCode-33_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Perfect](https://img.shields.io/badge/100%25_Runtime-25_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty five problems hit **100% runtime**. Thirty two problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty five problems hit **100% runtime**. Thirty three problems down. The rest of the semester ahead.
 
 ---
 
@@ -103,7 +103,7 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   32                           |   
+   |     Problems Solved      →   33                           |   
 |     100% Runtime Hits    →   25 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
