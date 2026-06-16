@@ -128,8 +128,6 @@ dsa-master-vault/
 | 35 | Search Insert Position | **0ms (100%) 🥇** | 14MB (76%) | [→ code](C++/Linear_DS/Array/LeetCode_problems/03_searchInsertPosition.cpp) |
 | 88 | Merge Sorted Array | **0ms (100%) 🥇** | 13MB (76%) | [→ code](C++/Linear_DS/Array/LeetCode_problems/04_mergeSortedArray.cpp) |
 
----
-
 ### 🔗 Linked Lists — 5 Problems
 **Patterns practiced:** Fast/slow pointers · Pointer reversal · Dummy head pattern
 
@@ -140,8 +138,6 @@ dsa-master-vault/
 | 141 | Linked List Cycle | 12ms (43%) | 12MB (81%) | [→ code](C++/Linear_DS/Linked_List/LeetCode_problems/04_linkedlistCycle.cpp) |
 | 206 | Reverse Linked List | **0ms (100%) 🥇** | 13MB (42%) | [→ code](C++/Linear_DS/Linked_List/LeetCode_problems/01_reverseLinkedList.cpp) |
 | 876 | Middle of the Linked List | **0ms (100%) 🥇** | 10MB (63%) | [→ code](C++/Linear_DS/Linked_List/LeetCode_problems/05_middleofLinkedList.cpp) |
-
----
 
 ### 🚶‍♂️🚶‍♂️🚶‍♂️ Queue — 5 Problems
 **Patterns practiced:** Sliding window pattern · Two-stack queue conversion · Two-queue simulation · Position tracking in rounds
