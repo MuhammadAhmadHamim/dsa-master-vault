@@ -35,7 +35,8 @@ dsa-master-vault/
 │
 └── C++/
     ├── Algorithms/
-    │   └── Math_Algorithms/
+    │   ├── Math_algorithms/
+    |   └── Searching_algorithms/
     │
     ├── Linear_DS/
     │   ├── Array/
