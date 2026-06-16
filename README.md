@@ -199,13 +199,13 @@ dsa-master-vault/
 
 Core algorithmic patterns — the foundation of optimization. Each includes full implementation, complexity analysis, and practical use cases.
 
-### Math Algorithms
+### ➗ Math Algorithms
 
 | # | Algorithm | Runtime | Memory | File |
 |:---:|---|:---:|:---:|:---:|
 | 9 | **Palindrome Number** | 5ms (78.99%) | 45.96MB (53.10%) | [01_palindromeNumber.cpp](C++/Algorithms/Math_algorithms/01_palindromeNumber.cpp) |
 
-### Searching Algorithms
+### 🔎 Searching Algorithms
 
 | Algorithm | Time | Space | When to Use | File |
 |-----------|------|-------|------------|------|
