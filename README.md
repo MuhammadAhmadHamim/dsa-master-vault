@@ -36,7 +36,8 @@ dsa-master-vault/
 └── C++/
     ├── Algorithms/
     │   ├── Math_algorithms/
-    |   └── Searching_algorithms/
+    |   ├── Searching_algorithms/
+    |   └── Sorting_algorithms/
     │
     ├── Linear_DS/
     │   ├── Array/
@@ -207,6 +208,14 @@ Core algorithmic patterns — the foundation of optimization. Each includes full
 |---|-----------|------|-------|------------|------|
 | 1 | **Linear Search** | O(n) | O(1) | Unsorted arrays, small data | [01_linearSearch.cpp](C++/Algorithms/Searching_algorithms/01_linearSearch.cpp) |
 | 2 | **Binary Search** | O(log n) | O(1) | Sorted arrays, large datasets | [02_binarySearch.cpp](C++/Algorithms/Searching_algorithms/02_binarySearch.cpp) |
+
+### ⇄ Sorting Algorithms
+
+| # | Algorithm | Best | Avg | Worst | Space | File |
+|---|-----------|------|-----|-------|-------|------|
+| 1 | **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) | [01_bubbleSort.cpp](C++/Algorithms/Sorting_algorithms/01_bubbleSort.cpp) |
+| 2 | **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) | [02_selectionSort.cpp](C++/Algorithms/Sorting_algorithms/02_selectionSort.cpp) |
+| 3 | **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) | [03_insertionSort.cpp](C++/Algorithms/Sorting_algorithms/03_insertionSort.cpp) |
 
 ---
 
