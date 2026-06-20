@@ -796,37 +796,31 @@ void insertionSort(int arr[], int n){
 // Space: O(1) - in-place
 // Pattern: Insert each element into sorted portion
 
-// === MATH/STRING ALGORITHMS ===
+// === MATH ALGORITHMS ===
 
-// 35. Palindrome Check - O(n) verify if string reads same forwards/backwards
-bool isPalindrome(string s){
-    int left = 0, right = s.length() - 1;
+// 35. Palindrome Check (Number) - O(log n) verify symmetric integer
+bool isPalindrome(int num){
     
-    while(left < right){
-        // Skip non-alphanumeric from left
-        while(left < right && !isalnum(s[left])){
-            left++;
-        }
-        
-        // Skip non-alphanumeric from right
-        while(left < right && !isalnum(s[right])){
-            right--;
-        }
-        
-        // Convert to lowercase and compare
-        if(tolower(s[left]) != tolower(s[right])){
-            return false;  // Not palindrome
-        }
-        
-        left++;
-        right--;
+    // Negative numbers are not palindromes
+    if(num < 0) return false;
+    
+    int original = num;
+    int reversed = 0;
+    
+    // Reverse the number by extracting digits
+    while(num > 0){
+        int digit = num % 10;      // Extract last digit (0-9)
+        reversed = reversed * 10 + digit;  // Build reversed number
+        num = num / 10;            // Remove last digit
     }
-    return true;  // Is palindrome
+    
+    // Check if original equals reversed
+    return original == reversed;
 }
-// Time: O(n) - single pass with two pointers
-// Space: O(1) - no extra space needed
-// Pattern: Two pointer convergence, ignore non-alphanumeric
-// Used in: String validation, character analysis
+// Time: O(log n) - iterations = number of digits
+// Space: O(1) - constant space
+// Pattern: Digit extraction, mathematical reversal
+// Used in: Number validation, integer properties
 
 ```
 
@@ -847,7 +841,7 @@ Week 10  ─────────────●── HashMaps. Frequency Co
                         │
 Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6 perfect scores out of 6 problems solved.
                           |
-Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math/String algorithms.
+Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math algorithms.
 ```
 
 ---
@@ -918,8 +912,7 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Algorithm-Bubble_Sort-d62828?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Selection_Sort-ca6702?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Insertion_Sort-bb3e03?style=flat-square&logo=buffer&logoColor=white)
-![](https://img.shields.io/badge/Algorithm-Palindrome_Check-457b9d?style=flat-square&logo=buffer&logoColor=white)
-
+![](https://img.shields.io/badge/Algorithm-Palindrome_Check_(Number)-457b9d?style=flat-square&logo=buffer&logoColor=white)
 </div>
 
 ---
