@@ -708,6 +708,126 @@ vector<vector<int>> levelOrderByLevel(TreeNode* root){
     return result;
 }
 // Key trick: Use levelSize to know where current level ends
+
+// === SEARCHING ALGORITHMS ===
+
+// 30. Linear Search - O(n) scan through array
+int linearSearch(int arr[], int n, int value){
+    for(int i = 0; i < n; i++){
+        if(arr[i] == value){
+            return i;  // Found at index i
+        }
+    }
+    return -1;  // Not found
+}
+// Time: O(n) - checks every element
+// Space: O(1) - no extra space
+// Best for: Unsorted arrays, small datasets
+
+// 31. Binary Search - O(log n) divide and conquer
+int binarySearch(int arr[], int n, int value){
+    int left = 0, right = n - 1;
+    
+    while(left <= right){
+        int mid = left + (right - left) / 2;
+        
+        if(arr[mid] == value){
+            return mid;  // Found
+        }
+        else if(arr[mid] < value){
+            left = mid + 1;  // Search right
+        }
+        else{
+            right = mid - 1;  // Search left
+        }
+    }
+    return -1;  // Not found
+}
+// Time: O(log n) - eliminates half each iteration
+// Space: O(1) - in-place search
+// Best for: Sorted arrays, large datasets
+
+// === SORTING ALGORITHMS ===
+
+// 32. Bubble Sort - O(n²) adjacent element swapping
+void bubbleSort(int arr[], int n){
+    for(int i = 0; i < (n-1); i++){
+        for(int j = 0; j < n - i - 1; j++){
+            if(arr[j] > arr[j+1]){
+                swap(arr[j], arr[j+1]);  // Bubble larger right
+            }
+        }
+    }
+}
+// Time: O(n) best (sorted), O(n²) average/worst
+// Space: O(1) - in-place
+// Pattern: Repeatedly swap adjacent if in wrong order
+
+// 33. Selection Sort - O(n²) find minimum and place
+void selectionSort(int arr[], int n){
+    for(int i = 0; i < n-1; i++){
+        int min_index = i;
+        for(int j = i+1; j < n; j++){
+            if(arr[j] < arr[min_index]){
+                min_index = j;  // Track minimum
+            }
+        }
+        swap(arr[i], arr[min_index]);  // Place minimum
+    }
+}
+// Time: O(n²) always - no optimization possible
+// Space: O(1) - in-place
+// Pattern: Find minimum, swap to correct position
+
+// 34. Insertion Sort - O(n²) build sorted array incrementally
+void insertionSort(int arr[], int n){
+    for(int i = 1; i < n; i++){
+        int key = arr[i];
+        int j = i - 1;
+        
+        while(j >= 0 && arr[j] > key){
+            arr[j + 1] = arr[j];  // Shift larger elements right
+            j = j - 1;
+        }
+        arr[j + 1] = key;  // Insert in correct position
+    }
+}
+// Time: O(n) best (sorted), O(n²) average/worst
+// Space: O(1) - in-place
+// Pattern: Insert each element into sorted portion
+
+// === MATH/STRING ALGORITHMS ===
+
+// 35. Palindrome Check - O(n) verify if string reads same forwards/backwards
+bool isPalindrome(string s){
+    int left = 0, right = s.length() - 1;
+    
+    while(left < right){
+        // Skip non-alphanumeric from left
+        while(left < right && !isalnum(s[left])){
+            left++;
+        }
+        
+        // Skip non-alphanumeric from right
+        while(left < right && !isalnum(s[right])){
+            right--;
+        }
+        
+        // Convert to lowercase and compare
+        if(tolower(s[left]) != tolower(s[right])){
+            return false;  // Not palindrome
+        }
+        
+        left++;
+        right--;
+    }
+    return true;  // Is palindrome
+}
+// Time: O(n) - single pass with two pointers
+// Space: O(1) - no extra space needed
+// Pattern: Two pointer convergence, ignore non-alphanumeric
+// Used in: String validation, character analysis
+
 ```
 
 ---
@@ -726,7 +846,8 @@ Week 8 & 9  ────────●── Stacks. Bracket Matching. 5 perfec
 Week 10  ─────────────●── HashMaps. Frequency Counting. 4 perfect scores out of 6 problems solved.
                         │
 Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6 perfect scores out of 6 problems solved.
-
+                          |
+Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math/String algorithms.
 ```
 
 ---
@@ -792,6 +913,12 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Pattern-Tree_Inversion-e76f51?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/C%2B%2B-Recursive_Design-0e4d6c?style=flat-square&logo=cplusplus&logoColor=white)
 ![](https://img.shields.io/badge/C%2B%2B-Pointer_References-020c1b?style=flat-square&logo=cplusplus&logoColor=64ffda)
+![](https://img.shields.io/badge/Algorithm-Linear_Search-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Algorithm-Binary_Search-e76f51?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Bubble_Sort-d62828?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Selection_Sort-ca6702?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Insertion_Sort-bb3e03?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Palindrome_Check-457b9d?style=flat-square&logo=buffer&logoColor=white)
 
 </div>
 
