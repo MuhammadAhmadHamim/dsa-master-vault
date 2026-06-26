@@ -81,6 +81,9 @@ dsa-master-vault/
     │       └── hashMapImplementation.cpp
     │
     └── Non_Linear_DS/
+        ├── Graph/
+        |   └── graph_basics.cpp
+        |
         └── Trees/
             ├── LeetCode_problems/
             ├── AVL/
@@ -353,6 +356,16 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 | File | Operation |
 |---|---|
 | [AVL_rotations.pdf](C++/Non_Linear_DS/Trees/AVL/AVL_rotations.pdf) | All four types of AVL tree rotations |
+
+</details>
+
+<details>
+<summary><b>📈 Graph & Traversal Techniques</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [graph_basics.cpp](C++/Non_Linear_DS/Graph/graph_basics.cpp) | Addition operation for undirected Graph, BFS/DFS traversal techniques |
 
 </details>
 
@@ -822,6 +835,54 @@ bool isPalindrome(int num){
 // Pattern: Digit extraction, mathematical reversal
 // Used in: Number validation, integer properties
 
+// === GRAPH ALGORITHMS ===
+
+// 36. Add Edge to Graph - O(1) build adjacency list
+void addEdge(unordered_map<int, vector<int>>& adj, int u, int v, bool isDirected = false){
+    adj[u].push_back(v);
+    if(!isDirected){
+        adj[v].push_back(u);
+    }
+}
+// Time: O(1), Space: O(E)
+// Pattern: Adjacency list construction
+
+// 37. BFS - O(V + E) level-by-level traversal
+void bfs(unordered_map<int, vector<int>>& adj, int start){
+    unordered_set<int> visited;
+    queue<int> q;
+    visited.insert(start);
+    q.push(start);
+    
+    while(!q.empty()){
+        int vertex = q.front();
+        q.pop();
+        cout << vertex << " ";
+        
+        for(int neighbor : adj[vertex]){
+            if(visited.find(neighbor) == visited.end()){
+                visited.insert(neighbor);
+                q.push(neighbor);
+            }
+        }
+    }
+}
+// Time: O(V + E), Space: O(V)
+// Pattern: Queue-based level traversal
+
+// 38. DFS - O(V + E) recursive deep traversal
+void dfs(unordered_map<int, vector<int>>& adj, int vertex, unordered_set<int>& visited){
+    visited.insert(vertex);
+    cout << vertex << " ";
+    
+    for(int neighbor : adj[vertex]){
+        if(visited.find(neighbor) == visited.end()){
+            dfs(adj, neighbor, visited);
+        }
+    }
+}
+// Time: O(V + E), Space: O(V)
+// Pattern: Recursive backtracking
 ```
 
 ---
@@ -842,6 +903,8 @@ Week 10  ─────────────●── HashMaps. Frequency Co
 Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6 perfect scores out of 6 problems solved.
                           |
 Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math algorithms.
+                            |
+Week 17 ────────────────────●── Graphs.
 ```
 
 ---
@@ -850,7 +913,7 @@ Week 16 ──────────────────●── Algorith
 
 The vault is still being filled. On the roadmap:
 
-- **Non-Linear DS** — Trees (Heaps), Graphs
+- **Non-Linear DS** — Trees (Heaps)
 - **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
 - **Algorithm Patterns** — Sliding window, Dynamic Programming foundations
 - **More LeetCode** 
@@ -913,6 +976,10 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Algorithm-Selection_Sort-ca6702?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Insertion_Sort-bb3e03?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Palindrome_Check_(Number)-457b9d?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Graph_Representation-f4a261?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Pattern-Adjacency_List-457b9d?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-BFS_Traversal-e76f51?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-DFS_Traversal-d62828?style=flat-square&logo=buffer&logoColor=white)
 </div>
 
 ---
