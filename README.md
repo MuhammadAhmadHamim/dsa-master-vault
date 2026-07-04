@@ -219,6 +219,7 @@ Core algorithmic patterns — the foundation of optimization. Each includes full
 | 1 | **Bubble Sort** | O(n) | O(n²) | O(n²) | O(1) | [01_bubbleSort.cpp](C++/Algorithms/Sorting_algorithms/01_bubbleSort.cpp) |
 | 2 | **Selection Sort** | O(n²) | O(n²) | O(n²) | O(1) | [02_selectionSort.cpp](C++/Algorithms/Sorting_algorithms/02_selectionSort.cpp) |
 | 3 | **Insertion Sort** | O(n) | O(n²) | O(n²) | O(1) | [03_insertionSort.cpp](C++/Algorithms/Sorting_algorithms/03_insertionSort.cpp) |
+| 4 | **Quick Sort** | O(n log n) | O(n log n) | O(n²) | O(log n) | [04_quickSort.cpp](C++/Algorithms/Sorting_algorithms/04_quickSort.cpp) |
 
 ---
 
@@ -809,9 +810,21 @@ void insertionSort(int arr[], int n){
 // Space: O(1) - in-place
 // Pattern: Insert each element into sorted portion
 
+// 35. Quick Sort - O(n log n) average, pivot-based divide and conquer
+void quickSort(int arr[], int low, int high){
+    if(low < high){
+        int pivot_index = partition(arr, low, high);
+        quickSort(arr, low, pivot_index - 1);
+        quickSort(arr, pivot_index + 1, high);
+    }
+}
+// Time: O(n log n) average, O(n²) worst
+// Space: O(log n) recursion stack
+// Pattern: Pivot selection, partition
+
 // === MATH ALGORITHMS ===
 
-// 35. Palindrome Check (Number) - O(log n) verify symmetric integer
+// 36. Palindrome Check (Number) - O(log n) verify symmetric integer
 bool isPalindrome(int num){
     
     // Negative numbers are not palindromes
@@ -837,7 +850,7 @@ bool isPalindrome(int num){
 
 // === GRAPH ALGORITHMS ===
 
-// 36. Add Edge to Graph - O(1) build adjacency list
+// 37. Add Edge to Graph - O(1) build adjacency list
 void addEdge(unordered_map<int, vector<int>>& adj, int u, int v, bool isDirected = false){
     adj[u].push_back(v);
     if(!isDirected){
@@ -847,7 +860,7 @@ void addEdge(unordered_map<int, vector<int>>& adj, int u, int v, bool isDirected
 // Time: O(1), Space: O(E)
 // Pattern: Adjacency list construction
 
-// 37. BFS - O(V + E) level-by-level traversal
+// 38. BFS - O(V + E) level-by-level traversal
 void bfs(unordered_map<int, vector<int>>& adj, int start){
     unordered_set<int> visited;
     queue<int> q;
@@ -870,7 +883,7 @@ void bfs(unordered_map<int, vector<int>>& adj, int start){
 // Time: O(V + E), Space: O(V)
 // Pattern: Queue-based level traversal
 
-// 38. DFS - O(V + E) recursive deep traversal
+// 39. DFS - O(V + E) recursive deep traversal
 void dfs(unordered_map<int, vector<int>>& adj, int vertex, unordered_set<int>& visited){
     visited.insert(vertex);
     cout << vertex << " ";
@@ -904,7 +917,7 @@ Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6
                           |
 Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math algorithms.
                             |
-Week 17 ────────────────────●── Graphs.
+Week 17 ────────────────────●── Graphs. Sorting(4/6).
 ```
 
 ---
@@ -914,7 +927,7 @@ Week 17 ────────────────────●── Gr
 The vault is still being filled. On the roadmap:
 
 - **Non-Linear DS** — Trees (Heaps)
-- **Sorting Algorithms** — Merge sort, Quick sort, Heap sort
+- **Sorting Algorithms** — Merge sort, Heap sort
 - **Algorithm Patterns** — Sliding window, Dynamic Programming foundations
 - **More LeetCode** 
 
@@ -980,6 +993,7 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Pattern-Adjacency_List-457b9d?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-BFS_Traversal-e76f51?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-DFS_Traversal-d62828?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/Algorithm-Quick_Sort-d62828?style=flat-square&logo=buffer&logoColor=white)
 </div>
 
 ---
