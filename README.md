@@ -5,8 +5,8 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-36_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
-![Perfect](https://img.shields.io/badge/100%25_Runtime-26_Problems_🥇-0a2540?style=for-the-badge)
+![LeetCode](https://img.shields.io/badge/LeetCode-37_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![Perfect](https://img.shields.io/badge/100%25_Runtime-27_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
 
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty six problems hit **100% runtime**. Thirty six problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty seven problems hit **100% runtime**. Thirty seven problems down. The rest of the semester ahead.
 
 ---
 
@@ -108,8 +108,8 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   36                           |   
-|     100% Runtime Hits    →   26 🥇                       |
+   |     Problems Solved      →   37                           |   
+|     100% Runtime Hits    →   27 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
   |      Status               →   🔨 Ongoing                  |  
@@ -194,7 +194,7 @@ dsa-master-vault/
 | 226 | Invert Binary Tree | **0ms (100%) 🥇** | 12.48MB (60.11%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/05_invertBinaryTree.cpp) |
 | 102 | Binary Tree Level Order Traversal | **0ms (100%) 🥇** | 17.01MB (71.70%) | [→ code](C++/Non_Linear_DS/Trees/LeetCode_problems/06_binaryTreeLevelOrderTraversal.cpp) |
 
-### 📈 Graph — 3 Problems
+### 📈 Graph — 4 Problems
 
 **Patterns practiced:** Recursive backtracking · Queue-based level traversal
 
@@ -203,6 +203,7 @@ dsa-master-vault/
 | 200 | Number of Islands | 24ms (77.99%) | 16.18MB (90.24%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/01_numberofIslands.cpp) |
 | 733 | Flood Fill | **0ms (100%) 🥇** | 18.04MB (77.13%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/02_floodFill.cpp) |
 | 994 | Rotting Oranges | 1ms (37.61%) | 16.58MB (97.64%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/03_rottingOranges.cpp) |
+| 547 | Number of Provinces | **0ms (100%) 🥇** | 19.30MB (92.77%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/04_numberofProvinces.cpp) |
 
 ---
 
