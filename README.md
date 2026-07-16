@@ -91,6 +91,7 @@ dsa-master-vault/
             |   └── AVL_rotations.pdf
             |
             ├── Binary_Tree/
+            |   ├── Heap/
             |   ├── levelOrderTraversal.cpp
             |   └── traversalTechniques.cpp
             |
@@ -938,7 +939,6 @@ Week 17 ────────────────────●── Gr
 
 The vault is still being filled. On the roadmap:
 
-- **Non-Linear DS** — Trees (Heaps)
 - **Sorting Algorithms** — Merge sort, Heap sort
 - **Algorithm Patterns** — Sliding window, Dynamic Programming foundations
 - **More LeetCode** 
