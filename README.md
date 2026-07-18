@@ -85,13 +85,14 @@ dsa-master-vault/
         |   ├── LeetCode_problems/
         |   └── graph_basics.cpp
         |
+        ├── Heap/
+        |
         └── Trees/
             ├── LeetCode_problems/
             ├── AVL/
             |   └── AVL_rotations.pdf
             |
             ├── Binary_Tree/
-            |   ├── Heap/
             |   ├── levelOrderTraversal.cpp
             |   └── traversalTechniques.cpp
             |
@@ -931,6 +932,8 @@ Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6
 Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math algorithms.
                             |
 Week 17 ────────────────────●── Graphs. Sorting(4/6). 3 problems solved based on Graph traversal.
+                              |
+Week 18 ──────────────────────●── Heaps.
 ```
 
 ---
