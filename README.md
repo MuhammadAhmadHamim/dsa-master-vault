@@ -384,6 +384,16 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 
 </details>
 
+<details>
+<summary><b>⛰ Heap Operations & Implementation</b></summary>
+<br/>
+
+| File | Operation |
+|---|---|
+| [minHeap.cpp](C++/Non_Linear_DS/Heap/minHeap.cpp) | getMin(), extractMin() & buildHeap() to maintain a Min Heap |
+
+</details>
+
 ---
 
 ## ◈ Techniques in the Toolkit
