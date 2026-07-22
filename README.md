@@ -391,6 +391,7 @@ These aren't LeetCode solutions — they're hand-built implementations of data s
 | File | Operation |
 |---|---|
 | [minHeap.cpp](C++/Non_Linear_DS/Heap/minHeap.cpp) | getMin(), extractMin() & buildHeap() to maintain a Min Heap |
+| [maxHeap.cpp](C++/Non_Linear_DS/Heap/maxHeap.cpp) | getMax(), extractMax() & buildHeap() to maintain a Max Heap |
 
 </details>
 
