@@ -86,6 +86,8 @@ dsa-master-vault/
         |   └── graph_basics.cpp
         |
         ├── Heap/
+        |   ├── maxHeap.cpp
+        |   └── minHeap.cpp
         |
         └── Trees/
             ├── LeetCode_problems/
@@ -921,6 +923,83 @@ void dfs(unordered_map<int, vector<int>>& adj, int vertex, unordered_set<int>& v
 }
 // Time: O(V + E), Space: O(V)
 // Pattern: Recursive backtracking
+
+// === HEAP FUNDAMENTALS ===
+
+// 40. Array-Based Tree Representation — no pointers needed
+// A Heap is a complete binary tree stored flat in a vector,
+// with parent-child relationships derived by arithmetic instead
+// of explicit left/right pointers.
+int parent(int i){ return (i - 1) / 2; }
+int leftChild(int i){ return (i * 2) + 1; }
+int rightChild(int i){ return (i * 2) + 2; }
+// Time: O(1) per lookup, Space: O(1) — no pointer overhead
+// Used in: Any heap-based structure, priority queues, Dijkstra
+
+// 41. Sift-Up (Bubble-Up) — restore order after inserting at the tail
+void shiftUp(int index){
+    while(index != 0 && heap[index] < heap[parent(index)]){
+        swap(heap[index], heap[parent(index)]);
+        index = parent(index);
+    }
+}
+// Only walks the ancestor chain of the new leaf — O(log n)
+// Guard (index != 0) checked FIRST so parent(0) is never evaluated unsafely
+// Used in: insert()
+
+// 42. Heap Insertion — push to tail, then sift-up
+void insert(int value){
+    heap.push_back(value);       // preserves completeness
+    shiftUp(heap.size() - 1);
+}
+// Time: O(log n) — bounded by tree height, not full array scan
+
+// 43. Sift-Down (Bubble-Down) — restore order after root is disturbed
+void shiftDown(int index){
+    while(true){
+        int smallest = index;
+        if(leftChild(index) < heap.size() && heap[index] > heap[leftChild(index)])
+            smallest = leftChild(index);
+        if(rightChild(index) < heap.size() && heap[smallest] > heap[rightChild(index)])
+            smallest = rightChild(index);   // compares against running "smallest", not stale index
+        if(smallest != index){
+            swap(heap[index], heap[smallest]);
+            index = smallest;               // descend and keep checking
+        }
+        else break;                          // heap property restored
+    }
+}
+// Must find smallest of THREE (node + both children), not just compare one child at a time
+// Used in: extractMin()/extractMax(), buildHeap()
+
+// 44. Extract-Min/Max — remove root, refill from tail, sift-down
+int extractMin(){
+    if(heap.size() == 0){ /* guard against empty heap */ }
+    int minimum = heap[0];
+    heap[0] = heap[heap.size() - 1];   // move last element to root
+    heap.pop_back();                    // shrink — preserves completeness
+    shiftDown(0);
+    return minimum;
+}
+// Time: O(log n) — one sift-down pass
+// Used in: Priority-based extraction, Dijkstra's next-closest-node step
+
+// 45. Build Heap (Heapify) — O(n) bottom-up construction
+void buildHeap(vector<int> arr){
+    heap = arr;
+    int index = parent(heap.size() - 1);   // last non-leaf node
+    for(int i = index; i >= 0; i--){
+        shiftDown(i);                       // leaves need no work; skip straight past them
+    }
+}
+// Starting from the last non-leaf and working backward guarantees every
+// subtree is already valid by the time its parent is processed.
+// Time: O(n) — cheaper than n calls to insert() [O(n log n)]
+
+// 46. Min-Heap vs Max-Heap — one comparison flip, same skeleton
+// Min-Heap:  parent <= children   (shiftUp/shiftDown use  < and > against parent/child)
+// Max-Heap:  parent >= children   (flip every comparison operator)
+// Everything else — index math, sift mechanics, extract flow — is identical
 ```
 
 ---
@@ -944,7 +1023,7 @@ Week 16 ──────────────────●── Algorith
                             |
 Week 17 ────────────────────●── Graphs. Sorting(4/6). 3 problems solved based on Graph traversal.
                               |
-Week 18 ──────────────────────●── Heaps.
+Week 18 ──────────────────────●── Heaps. Min & Max. Implemented from scratch using Arrays.
 ```
 
 ---
@@ -1020,6 +1099,11 @@ g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cp
 ![](https://img.shields.io/badge/Algorithm-BFS_Traversal-e76f51?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-DFS_Traversal-d62828?style=flat-square&logo=buffer&logoColor=white)
 ![](https://img.shields.io/badge/Algorithm-Quick_Sort-d62828?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/DSA-Min_Heap-1d3557?style=flat-square&logo=buffer&logoColor=f1faee)
+![](https://img.shields.io/badge/DSA-Max_Heap-6a040f?style=flat-square&logo=buffer&logoColor=ffd60a)
+![](https://img.shields.io/badge/Pattern-Array_Based_Tree-64ffda?style=flat-square&logo=buffer&logoColor=black)
+![](https://img.shields.io/badge/Algorithm-Heapify_O(n)-ca6702?style=flat-square&logo=buffer&logoColor=white)
+![](https://img.shields.io/badge/C%2B%2B-Index_Arithmetic-0e4d6c?style=flat-square&logo=cplusplus&logoColor=white)
 </div>
 
 ---
