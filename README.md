@@ -57,13 +57,13 @@ dsa-master-vault/
     │   |   │   ├── 01_insert.cpp
     │   |   │   └── 02_delete.cpp  
     |   |   |
-    │   |   ├── Doubly_Linked_List/
-    |   |   |   ├── Circular_Linked_List/
-    |   │   |   │   ├── 01_insert.cpp
-    |   │   |   │   └── 02_delete.cpp
-    |   |   |   |  
-    │   |   │   ├── 01_insert.cpp
-    │   |   │   └── 02_delete.cpp
+    │   |   └── Doubly_Linked_List/
+    |   |       ├── Circular_Linked_List/
+    |   │       │   ├── 01_insert.cpp
+    |   │       │   └── 02_delete.cpp
+    |   |       |  
+    │   |       ├── 01_insert.cpp
+    │   |       └── 02_delete.cpp
     |   |
     │   ├── Queue/
     │   │   ├── LeetCode_problems/
@@ -86,6 +86,7 @@ dsa-master-vault/
         |   └── graph_basics.cpp
         |
         ├── Heap/
+        |   ├── LeetCode_problems/
         |   ├── maxHeap.cpp
         |   └── minHeap.cpp
         |
