@@ -97,14 +97,3 @@ public:
         return heap[0]; // root of a min-heap of size k = the kth largest overall
     }
 };
-/*
-20
-ms
-Beats
-89.51%
-
-72.58
-MB
-Beats
-31.94%
-*/
