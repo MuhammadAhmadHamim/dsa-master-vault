@@ -5,7 +5,7 @@
 <br/>
 
 ![Language](https://img.shields.io/badge/C%2B%2B-Solutions-64ffda?style=for-the-badge&logo=cplusplus&logoColor=black)
-![LeetCode](https://img.shields.io/badge/LeetCode-37_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
+![LeetCode](https://img.shields.io/badge/LeetCode-38_Solved-a8dadc?style=for-the-badge&logo=leetcode&logoColor=black)
 ![Perfect](https://img.shields.io/badge/100%25_Runtime-27_Problems_🥇-0a2540?style=for-the-badge)
 ![Avg](https://img.shields.io/badge/Avg_Performance-85%25+-64ffda?style=for-the-badge)
 ![Semester](https://img.shields.io/badge/Semester-3_Ongoing-020c1b?style=for-the-badge)
@@ -24,7 +24,7 @@
 
 This is the DSA grind — documented. Every array traversal, every linked list pointer, every algorithm that finally clicked after the third attempt. Written in **C++**, built from Week 3 of Semester 3, and still actively growing.
 
-This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty seven problems hit **100% runtime**. Thirty seven problems down. The rest of the semester ahead.
+This vault tracks not just *what* was solved, but *how* — techniques, patterns, runtime performance, and the deliberate practice behind each solution. Twenty seven problems hit **100% runtime**. Thirty eight problems down. The rest of the semester ahead.
 
 ---
 
@@ -113,7 +113,7 @@ dsa-master-vault/
 ```
 ┌───────────────────────────────────────────────────────────┐
     |                                                           |    
-   |     Problems Solved      →   37                           |   
+   |     Problems Solved      →   38                           |   
 |     100% Runtime Hits    →   27 🥇                       |
   |     Average Performance  →   85%+                         |  
   |     Active Since         →   Week 3, Semester 3           |  
@@ -209,6 +209,14 @@ dsa-master-vault/
 | 733 | Flood Fill | **0ms (100%) 🥇** | 18.04MB (77.13%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/02_floodFill.cpp) |
 | 994 | Rotting Oranges | 1ms (37.61%) | 16.58MB (97.64%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/03_rottingOranges.cpp) |
 | 547 | Number of Provinces | **0ms (100%) 🥇** | 19.30MB (92.77%) | [→ code](C++/Non_Linear_DS/Graph/LeetCode_problems/04_numberofProvinces.cpp) |
+
+### ⛰ Heap — 1 Problem
+
+**Patterns practiced:** Shift Up/Down · Index arithmetic
+
+| # | Problem | Runtime | Memory | Link |
+|:---:|---|:---:|:---:|:---:|
+| 215 | kth Largest Element in an Array | 20ms (89.51%) | 72.58MB (31.94%) | [→ code](C++/Non_Linear_DS/Heap/LeetCode_problems/01_kthLargestElementinanArray.cpp) |
 
 ---
 
