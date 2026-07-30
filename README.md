@@ -1029,6 +1029,9 @@ Week 10  ─────────────●── HashMaps. Frequency Co
 Week 11-15  ────────────●── Trees. BFS/DFS. AVL. 6 perfect scores out of 6 problems solved.
                           |
 Week 16 ──────────────────●── Algorithms. Searching(2/2). Sorting(3/6). Math algorithms.
+```
+**Summer 2026**:
+```
                             |
 Week 17 ────────────────────●── Graphs. Sorting(4/6). 3 problems solved based on Graph traversal.
                               |
