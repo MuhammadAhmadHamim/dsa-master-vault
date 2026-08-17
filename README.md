@@ -216,7 +216,7 @@ dsa-master-vault/
 
 | # | Problem | Runtime | Memory | Link |
 |:---:|---|:---:|:---:|:---:|
-| 215 | kth Largest Element in an Array | 20ms (89.51%) | 72.58MB (31.94%) | [→ code](C++/Non_Linear_DS/Heap/LeetCode_problems/01_kthLargestElementinanArray.cpp) |
+| 215 | Kth Largest Element in an Array | 20ms (89.51%) | 72.58MB (31.94%) | [→ code](C++/Non_Linear_DS/Heap/LeetCode_problems/01_kthLargestElementinanArray.cpp) |
 
 ---
 
