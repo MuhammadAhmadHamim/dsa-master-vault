@@ -1055,7 +1055,6 @@ The vault is still being filled. On the roadmap:
 ```bash
 # Clone the vault
 git clone https://github.com/MuhammadAhmadHamim/dsa-master-vault.git
-cd dsa-master-vault
 
 # Compile any solution
 g++ -std=c++17 -O2 -o output "C++/Linear_DS/Array/LeetCode_problems/01_twoSum.cpp"
